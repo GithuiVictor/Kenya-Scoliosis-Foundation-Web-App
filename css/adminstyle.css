@@ -129,3 +129,57 @@ body{
 .event-border{
     border-left: 5px solid #01d262;
 }
+
+/*Events*/
+.events .heading-1{
+    font-weight: 700;
+}
+
+.events a{
+    border-radius: 50%;
+}
+
+.events a:hover{
+    text-decoration: none;
+}
+
+.events .event-post{
+    box-shadow: 1px 2px 5px #999;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+    transition: all .4s;
+}
+
+.events .event-post:hover{
+    box-shadow: 2px 3px 16px #999;
+    transform: translateY(-5px);
+}
+
+.events .eventName{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 35px;
+    color: black;
+}
+
+.events .eventName:hover{
+    text-decoration: none;
+    color: #01d262;
+}
+
+.events .tickets{
+    margin-top: 4rem;
+}
+
+.events .btn{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: 0%;
+}
+
+.events img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
