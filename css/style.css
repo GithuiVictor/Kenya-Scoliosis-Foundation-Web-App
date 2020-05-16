@@ -1,0 +1,1399 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lato';
+}
+
+
+/*Navigation*/
+.navbar-brand{
+    font-family: 'Pacifico';
+    font-size: 25px;
+    font-weight: 580;
+    color: #00a04b !important;
+}
+
+.navbar-brand img{
+    height: 55px;
+    width: 55px;
+}
+
+.nav-link{
+    font-size: 15px;
+    margin: 10px;
+    color: black !important;
+    font-family: 'Roboto Condensed';
+}
+
+.nav-link:hover{
+    color: green !important;
+}
+
+.active .nav-link{
+    color: green !important;
+}
+
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
+.dropdown-item:hover{
+    color: white !important;
+    background-color: green !important;
+}
+.dropdown-item{
+    font-size: 15px;
+}
+
+.menu-right-btn{
+    padding: 8px 30px;
+    background-color: transparent;
+    border-color: green !important;
+    transition: all 300ms ease-in;
+}
+
+.menu-right-btn:hover{
+    color: white !important;
+    background-color: green !important;
+}
+
+
+/*Carosel*/
+.carousel{
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.carousel-inner{
+    height: 800px;
+}
+
+.carousel .carousel-item img{
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    margin-bottom: 25%;
+    font-family: 'Righteous';
+}
+
+.carousel-caption .btn{
+    color: whitesmoke;
+    margin-top: 4%;
+}
+
+.carousel-caption .btn:hover{
+    background-color: whitesmoke;
+    color: green;
+}
+
+/*Section 2*/
+.section-2{
+    background-color: #01d262;
+}
+
+.section-2 .row .col-md-7, .col-md-5{
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+}
+
+.section-2 .col-md-7 img{
+    width: 590px;
+}
+
+.section-2 a{
+    color: rgb(105, 117, 98);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.section-2 a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.section-2 .para-1{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed';
+    margin-top: 7%;
+    font-size: 17px;
+}
+
+
+/*Section 3*/
+.section-3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 80%;
+}
+
+.section-3 .heading-1{
+    margin: 5%;
+}
+
+.section-3 i{
+    color: #01d262;
+}
+
+.section-3 h4{
+    color: rgb(0, 0, 0,  0.59);
+}
+
+
+
+/*Section 4*/
+.section-4 .container-fluid{
+    background-color: black;
+    background-image: url('../images/like&share.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-4 .heading-1{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: 'Righteous';
+    width: 80%;
+    color: whitesmoke;
+    text-align: end;
+}
+
+.section-4 i{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.section-4 .para{
+    width: 80%;
+    font-family: 'Ubuntu';
+    color: whitesmoke;
+    margin-bottom: 4%;
+}
+
+.section-4 .btn{
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+    color: whitesmoke;
+    background-color: #01d262;
+}
+
+.section-4 .btn:hover{
+    background-color: #01a74f;
+}
+
+
+/*Section 5*/
+.section-5 .heading-1{
+    margin: 4%;
+}
+
+.section-5 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    font-size: 16px;
+}
+
+.section-5 .card-text, .para-1{
+    color: rgb(0, 0, 0,  0.59);
+}
+
+.section-5{
+    margin-bottom: 4%;
+}
+
+.section-5 .card{
+    width: 21.5rem;
+    height: 30rem;
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
+}
+
+.section-5 .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 16px #999;
+}
+
+.section-5 .card-img-top{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-5 .card-footer{
+    background: transparent;
+}
+
+.section-5 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-5 .btn:hover{
+    background-color: #01a74f;
+}
+
+
+/*Section 6*/
+.section-6 .container-fluid{
+    background-image: url('../images/carosal-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-6 .heading-1{
+    margin-top: 4%;
+    margin-bottom: 1%;
+    font-family: 'Righteous';
+    width: 80%;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 18rem;
+}
+
+.section-6 .logo2 img{
+    height: 8rem;
+    margin-top: 6%;
+}
+
+
+/*Section 7*/
+.section-7 .heading-1{
+    margin: 4%;
+}
+
+.section-7 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    font-size: 16px;
+}
+
+.section-7 .card-text, .para-1{
+    color: rgb(0, 0, 0,  0.59);
+}
+
+.section-7 .card-text{
+    font-size: 80%;
+}
+
+.section-7{
+    margin-bottom: 4%;
+}
+
+.section-7 .card{
+    width: 21.5rem;
+    height: 40rem;
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
+}
+
+.section-7 .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 16px #999;
+}
+
+.section-7 .card-img-top{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-7 .details{
+    font-size: 15px;
+}
+
+.section-7 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-7 .btn:hover{
+    background-color: #01a74f;
+}
+
+
+/*Section 8*/
+.section-8 i{
+    color: #01d262;
+}
+
+.section-8 i:hover{
+    color: #01a74f;
+}
+
+.section-8 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-8 .btn:hover{
+    color: whitesmoke;
+    background-color: #01a74f;
+}
+
+.section-8 .form-control:focus{
+    border-color: #01d262 !important;
+    box-shadow: none;
+    border: 1px solid;
+}
+
+#copyright{
+    font-size: 12px;
+}
+
+/*Section 9*/
+.section-9{
+    background-color: #f9f6f5;
+}
+
+.section-9 .card-title{
+    margin-top: 4%;
+}
+
+.section-9 .card-text{
+    color: rgb(0, 0, 0,  0.59);
+    font-size: 20px;
+}
+
+.section-9 .card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 45rem;
+}
+
+.section-9 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+    margin-top: 6%;
+}
+
+.section-9 .btn:hover{
+    background-color: #01a74f;
+}
+
+/*section 10*/
+.section-10{
+    background-color: #f9f6f5;
+}
+
+.section-10 .card-title{
+    margin-top: 4%;
+}
+
+.section-10 .card-text{
+    color: rgb(0, 0, 0,  0.59);
+    font-size: 20px;
+}
+
+.section-10 .card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 45rem;
+}
+
+.section-10 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+    margin-top: 6%;
+}
+
+.section-10 .btn:hover{
+    background-color: #01a74f;
+}
+
+/*Section 11*/
+.section-11{
+    background-color: #01d262;
+}
+
+.section-11 .row .col-md-7{
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+}
+
+.section-11 .col-md-5{
+    margin-top: 8%;
+}
+
+.section-11 h1{
+    font-size: 40px;
+}
+
+.section-11 .para-1{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed';
+    margin-top: 7%;
+    font-size: 22px;
+}
+
+
+/*Section 12*/
+.section-12 .heading-1{
+    margin: 5%;
+}
+
+.section-12 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+    font-size: 100%;
+}
+
+.section-12 .card-text, .para-1{
+    color: rgb(0, 0, 0,  0.59);
+}
+
+.section-12{
+    margin-bottom: 0%;
+}
+
+.section-12 .card{
+    width: 35rem;
+    margin-bottom: 5%;
+}
+
+.section-12 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-12 .btn:hover{
+    background-color: #01a74f;
+}
+
+/*Section13*/
+.section-13{
+    background-color: #f9f6f5;
+}
+
+.section-13 .card-title{
+    margin-top: 4%;
+}
+
+.section-13 .card-text{
+    color: rgb(0, 0, 0,  0.59);
+    font-size: 20px;
+}
+
+.section-13 .card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70rem;
+}
+
+.section-13 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+    margin-top: 6%;
+}
+
+.section-13 .btn:hover{
+    background-color: #01a74f;
+}
+
+
+/*Section 14*/
+.section-14{
+    background-color: #f9f6f5;
+}
+
+.section-14 .card-title{
+    margin-top: 4%;
+}
+
+.section-14 .card-text{
+    color: rgb(0, 0, 0,  0.59);
+    font-size: 20px;
+}
+
+.section-14 .card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70rem;
+}
+
+.section-14 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+    margin-top: 6%;
+;
+}
+
+.section-14 .btn:hover{
+    background-color: #01a74f;
+}
+
+.section-14 .card-title{
+    text-align: center;
+}
+
+/*Section 15*/
+.section-15{
+    background-color: #01d262;
+}
+
+.section-15 .row .col-md-6{
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+
+.section-15 h1{
+    font-size: 40px;
+}
+
+.section-15 li{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed';
+    margin-top: 7%;
+    font-size: 19px;
+}
+
+.section-15 .details{
+    color: whitesmoke;
+}
+
+
+/*Section 16*/
+.section-16{
+    background-color: #01d262;
+}
+
+.section-16 .row .col-md-7{
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+
+.section-16 .col-md-5{
+    margin-top: 8%;
+}
+
+.section-16 h1{
+    font-size: 40px;
+}
+
+.section-16 li{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed';
+    margin-top: 7%;
+    font-size: 19px;
+}
+
+.section-16 .details{
+    color: whitesmoke;
+    text-align: end;
+    margin-right: 8%;
+}
+
+/*Section 17*/
+.section-17{
+    background-color: white;
+}
+
+.section-17 .heading-1{
+    margin: 4%;
+}
+
+.section-17 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+    font-size: 20px;
+}
+
+.section-17 .row .col-md-7{
+    margin-top: 4%;
+    margin-bottom: 4.5%;
+}
+
+.section-17 .form-control:focus{
+    box-shadow: none;
+    border-color: #01d262;
+}
+
+.section-17 .col-md-5{
+    margin-top: 4%;
+}
+
+.section-17 h1{
+    font-size: 40px;
+}
+
+.section-17 li{
+    color: black;
+    font-family: 'Roboto Condensed';
+    margin-top: 7%;
+    font-size: 19px;
+}
+
+.section-17 .details{
+    color: rgb(0, 0, 0,  0.59);
+}
+
+.section-17 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-17 .btn:hover{
+    background-color: #01a74f;
+    color: whitesmoke;
+}
+
+/*Section 18*/
+.section-18 .heading-1{
+    margin: 5%;
+}
+
+.section-18 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    font-size: 17px;
+}
+
+.section-18 .card-text, .para-1{
+    color: rgb(0, 0, 0,  0.59);
+}
+
+.section-18{
+    margin-bottom: 4%;
+}
+
+.section-18 .card{
+    width: 21.5rem;
+    height: 40rem;
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
+}
+
+.section-18 .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 16px #999;
+}
+
+.section-18 .card-img-top{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-18 .details{
+    font-size: 15px;
+}
+
+.section-18 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-18 .btn:hover{
+    background-color: #01a74f;
+}
+
+
+/*Section 19*/
+.section-19{
+    background-color: #f9f6f5;
+}
+
+.section-19 .card-img-top{
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-19 .card-title{
+    margin-top: 4%;
+}
+
+.section-19 .subtitles{
+    border-left: 4px solid black;
+}
+
+.section-19 .card-text{
+    color: rgb(0, 0, 0,  0.59);
+    font-size: 19px;
+}
+
+.section-19 .card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70rem;
+}
+
+.section-19 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+    margin-top: 3%;
+;
+}
+
+.section-19 .btn:hover{
+    background-color: #01a74f;
+}
+
+.section-19 .heading-1{
+    text-align: center;
+}
+
+.section-19 .map-container{
+    margin-top: 4%;
+}
+
+
+/*Section 20*/
+
+.section-20 .heading-1, .card{
+    margin: 4%;
+}
+
+.section-20 .row .col-md-7{
+    margin-top: 4%;
+    margin-bottom: 4.5%;
+}
+
+.section-20 .col-md-5{
+    margin-top: 4%;
+}
+
+.section-20 h1{
+    font-size: 40px;
+}
+
+.section-20 .card-text, .field{
+    color: rgb(0, 0, 0,  0.59);
+}
+
+.section-20 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-20 .btn:hover{
+    background-color: #01a74f;
+}
+
+.section-20 .form-control:focus{
+    border-color: #01d262 !important;
+    box-shadow: none;
+    border: 1px solid;
+}
+
+
+/*Section 21*/
+
+.section-21 .heading-1{
+    margin-top: 10%;
+    margin-bottom: 4%;
+    margin-right: 8%;
+    text-align: center;
+}
+
+.section-21 .para-1{
+    margin-bottom: 4%;
+    font-size: 20px;
+}
+
+.section-21 .backToSite{
+    text-decoration: underline;
+}
+
+.section-21 .backToSite:hover{
+    color: black;
+}
+
+.section-21 .btn{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.section-21 .btn:hover{
+    background-color: #01a74f;
+}
+
+.section-21 .shareSocial{
+    margin-top: 3%;
+}
+
+.section-21 i{
+    color: #01d262;
+}
+
+.section-21 i:hover{
+    color: #01a74f;
+}
+
+/*section 22*/
+#admin{
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/sunset.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-22 .main-section{
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+}
+
+.section-22 .main-section .logo{
+    margin-bottom: 80px;
+    height: 150px;
+    width: 150px;
+}
+
+.section-22 .modal-content{
+	background-color: #434e5a;
+	opacity: .9;
+	padding: 0 18px;
+	border-radius: 10px;
+}
+
+.section-22 .user-img img{
+	height: 120px;
+	width: 120px;
+}
+
+.section-22 .user-img{
+	margin-top: -60px;
+	margin-bottom: 45px;
+}
+
+.section-22 .form-group{
+	margin-bottom: 25px;
+}
+
+.section-22 .form-group input{
+	height: 45px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-left: 30px;
+}
+
+.section-22 .form-input button{
+	width: 40%;
+	margin: 5px 0 25px;
+}
+
+.section-22 .btn-success{
+	font-size: 19px;
+	border-radius: 5px;
+	padding: 7px 14px;
+}
+
+.section-22 .btn-success:hover{
+	border: 1px solid;
+}
+
+.section-22 .forgot{
+	padding: 5px 0 25px;
+}
+
+.section-22 .forgot a{
+	color: #daf1ff;
+}
+
+/*section23*/
+.section-23{
+    background-color: #f9f6f5;
+}
+
+.section-23 .card{
+   width: auto; 
+}
+
+.section-23 .main-card{
+    border: none;
+}
+
+.section-23 .blog-heading{
+    font-weight: 700;
+    border-left: 4px solid black;
+}
+
+.section-23 .search-input{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(0, 0, 0,  0.59);
+    transition: none .4s;
+}
+
+.section-23 .search-input:focus{
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #01d262;
+}
+
+.section-23 .search-button{
+    border-radius: 50%;
+    padding: 10px 16px;
+    transition: all .4s;
+}
+
+.section-23 .search-button:hover{
+    background-color: #01d262;
+    color: whitesmoke;
+    transform: translateY(-1px);
+}
+
+.section-23 .blog-post{
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
+}
+
+.section-23 .blog-post:hover{
+    transform: translateX(-5px);
+    box-shadow: 2px 3px 15px #9999;
+}
+
+.section-23 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-23 a{
+    color: black;
+    text-decoration: none;
+}
+
+.section-23 a:hover{
+    color: #01d262;
+}
+
+.section-23 .category{
+    background-color: #999;
+    color: whitesmoke;
+}
+
+.section-23 .category a{
+    color: whitesmoke !important;
+    font-size: 15x;
+}
+
+.section-23 .category a:hover{
+    color: #01d262 !important;
+}
+
+.section-23 .article-heading a:hover{
+    color: #01d262 !important;
+}
+
+.section-23 .category-list{
+    border-left: 3px solid whitesmoke;
+}
+
+.section-23 .top-articles{
+    border-left: 3px solid black;
+}
+
+/*section24*/
+.section-24{
+    background-color: #f9f6f5;
+}
+
+.section-24 .card{
+   width: auto; 
+   border: none;
+}
+
+.section-24 .card-img-top{
+    height: 38rem;
+}
+
+.section-24 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-24 .blog-title{
+    font-weight: 700;
+    border-left: 4px solid black;
+}
+
+.section-24 a{
+    color: black;
+    text-decoration: none;
+}
+
+.section-24 a:hover{
+    color: #01d262;
+}
+
+.section-24 .category{
+    background-color: #999;
+    color: whitesmoke;
+}
+
+.section-24 .category a{
+    color: whitesmoke !important;
+    font-size: 15x;
+}
+
+.section-24 .category a:hover{
+    color: #01d262 !important;
+}
+
+.section-24 .article-heading a:hover{
+    color: #01d262 !important;
+}
+
+.section-24 .category-list{
+    border-left: 3px solid whitesmoke;
+}
+
+.section-24 .top-articles{
+    border-left: 3px solid black;
+}
+
+/*Section 25*/
+.section-25{
+    background-color: #f9f6f5;
+}
+
+.section-25 .main-card{
+    border: none;
+    background-color: #f9f6f5;
+}
+
+.section-25 .col-md-4{
+    margin-top: 3rem;
+}
+
+.section-25 .col-md-4 .card{
+    width: 22rem;
+    box-shadow: 2px 3px 16px #9999;
+}
+
+.section-25 .col-md-4 h4{
+    font-weight: 600;
+}
+
+.section-25 .col-md-8{
+    margin-top: 2rem;
+}
+
+.section-25 .col-md-8 .card{
+    box-shadow: 2px 3px 16px #9999;
+}
+
+.section-25 .col-md-8 .card .heading{
+    font-weight: 600;
+}
+
+.section-25 .col-md-8 .card .form-control:focus{
+    border-color: #01d262 !important;
+    box-shadow: none;
+    border: 1px solid;
+}
+
+.section-25 .col-md-8 .card-nav .active{
+    border-top: 4px solid green;
+    border-bottom: none;
+}
+
+.section-25 .col-md-8 .input-group .input-group-prepend .input-group-text{
+    background-color: transparent;
+    border-right: none;
+}
+
+#creditCard{
+    border-left: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .section-2 .col-md-7 img{
+        width: 400px;
+        margin-top: 40%;
+    }
+
+    .section-5 .card{
+        width: 14.5rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-7 .card{
+        width: 14.5rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-9 .card{
+        width: 28rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-10 .card{
+        width: 28rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-15 .col-md-7 img{
+        width: 400px;
+        margin-top: 15%;
+    }
+
+    .section-16 .col-md-7 img{
+        width: 400px;
+        margin-top: 10%;
+    }
+
+    .section-16 h1{
+        font-size: 35px;
+    }
+
+    .section-11 .col-md-7 img{
+        width: 400px;
+        margin-top: 20%;
+    }
+
+    .section-12 .card{
+        width: 21rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-13 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-14 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-18 .card{
+        width: 14rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-19 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-17 .col-md-5{
+        margin-top: 11%;
+    }
+}
+
+@media screen and (max-width: 894px){
+    .section-2 .col-md-7 img{
+        width: 400px;
+        margin-top: 40%;
+    }
+
+    .section-5 .card{
+        width: 14.5rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-7 .card{
+        width: 14.5rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-9 .card{
+        width: 28rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-10 .card{
+        width: 28rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-15 .col-md-7 img{
+        width: 400px;
+        margin-top: 15%;
+    }
+
+    .section-16 .col-md-7 img{
+        width: 400px;
+        margin-top: 10%;
+    }
+
+    .section-16 h1{
+        font-size: 35px;
+    }
+
+    .section-11 .col-md-7 img{
+        width: 400px;
+        margin-top: 20%;
+    }
+
+    .section-12 .card{
+        width: 21rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-13 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-14 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-18 .card{
+        width: 14rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-19 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-17 .col-md-5{
+        margin-top: 11%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .navbar-brand{
+        font-size: 17px;
+    }
+    .carousel .carousel-item{
+        height: 400px;
+    }
+    .carousel .carousel-item img{
+        height: 400px;
+    }
+
+    .section-2 .col-md-7 img{
+        width: 292px;
+        margin-top: 10%;
+    }
+
+    .section-3 h4{
+        font-size: 20px;
+    }
+
+    .section-4 .heading-1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section-5 .card{
+        width: 18rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-5 .para-1, .card-text{
+        font-size: 18px;
+    }
+
+    .section-7 .card{
+        width: 18rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-7 .para-1{
+        font-size: 18px;
+    }
+
+    .section-7 .card-text{
+        font-size: 18px;
+    }
+
+    .section-9 .card{
+        width: 18.2rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-10 .card{
+        width: 18.2rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-15 .col-md-7 img{
+        width: 292px;
+        margin-top: 10%;
+    }
+
+    .section-16 .col-md-7 img{
+        width: 292px;
+        margin-top: 5%;
+    }
+
+    .section-16 h1{
+        font-size: 35px;
+    }
+
+    .section-11 .col-md-7 img{
+        width: 292px;
+        margin-top: 20%;
+    }
+
+    .section-12 .card{
+        width: 18.2rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-13 .card{
+        width: 18.2rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-14 .card{
+        width: 18.2rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-18 .card{
+        width: 18.2rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-19 .card{
+        width: 18.2rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-17 .col-md-5{
+        margin-top: 11%;
+    }
+}
