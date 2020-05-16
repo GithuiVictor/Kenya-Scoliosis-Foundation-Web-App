@@ -4,31 +4,6 @@ $(document).ready(function(){
     
     window.sr = ScrollReveal({duration : 1000});
         sr.reveal('.carousel-indicators, .carousel-inner .active .carousel-caption');
-        sr.reveal('.section-2 .row');
-        sr.reveal('.section-3 .row');
-        sr.reveal('.section-4 .flex-column');
-        sr.reveal('.section-5 .para-1');
-        sr.reveal('.section-5 .row');
-        sr.reveal('.section-6 .row');
-        sr.reveal('.section-7 .para-1');
-        sr.reveal('.section-7 .row');
-        sr.reveal('.section-8');
-        sr.reveal('.section-15 .row');
-        sr.reveal('.section-16 .row');
-        sr.reveal('.section-23 .card-nav');
-        sr.reveal('.section-23 .blog');
-        sr.reveal('.section-24 .row');
-        sr.reveal('.section-18 .heading-1');
-        sr.reveal('.section-18 .para-1');
-        sr.reveal('.section-18 .row');
-        sr.reveal('.section-19 .row');
-        sr.reveal('.section-20 .row');
-        sr.reveal('.section-21 .main-content');
-        sr.reveal('.section-17 .heading-1');
-        sr.reveal('.section-17 .para-1');
-        sr.reveal('.section-17 .row');
-        sr.reveal('.section-25 .row');
-        sr.reveal('.section-22 .main-section');
 
     //Home Page
     $('.section-5 .details').hide();    
