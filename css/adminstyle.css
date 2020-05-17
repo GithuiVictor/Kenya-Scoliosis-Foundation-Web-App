@@ -183,3 +183,27 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
+.modal .cancelbtn{
+    background-color: transparent;
+    color: #01d262;
+    border: 2px solid #01d262;
+    transition: all .4s;
+}
+
+.modal .cancelbtn:hover{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.modal .exitbtn{
+    background-color: #01d262;
+    color: whitesmoke;
+    transition: all .4s;
+}
+
+.modal .exitbtn:hover{
+    background-color: transparent;
+    color: #01d262;
+    border: 1px solid #01d262;
+}
