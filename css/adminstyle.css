@@ -255,3 +255,13 @@ body{
 .eventEdit .update{
     margin-bottom: 20rem;
 }
+
+.eventEdit input:focus{
+    box-shadow: none;
+    border-color: #01d262;
+}
+
+.eventEdit textarea:focus{
+    box-shadow: none;
+    border-color: #01d262;
+}
