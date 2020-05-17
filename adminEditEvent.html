@@ -138,26 +138,125 @@
         </div>
 
         <!--Main Body-->
-        <main class="events">
+        <main class="eventEdit">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
 
                         <!--Heading-->
-                        <div class="row pt-md-5 mt-md-5 mb-md-3">
+                        <div class="row pt-md-5 mt-md-5 mb-md-3 heading-section">
                             <div class="col-lg-7 col-sm-5 ml-5">
-                                <h1 class="heading-1">Upcomming Events</h1>
-                                <p class="text-muted"> You have 4 upcomming events</p>
-                            </div>
-                            <div class="col-lg-4 col-sm-3 mt-4 text-right">
-                                <a href="#">
-                                    <button type="button" class="btn btn-success">+ Add Event</button>
-                                </a>
+                                <p class="text-muted ml-5 path">
+                                    <a href="adminEvent.html" class="text-muted">Events</a> 
+                                    <i class="fas fa-chevron-right"></i>
+                                    Event Name
+                                </p>
+                                <h1 class="heading-1 mb-5">
+                                    <a href="adminEvent.html" class="mr-2">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                    Event Name
+                                </h1>
                             </div>
                         </div>
-                        <hr>
 
+                        <!--Menus-->
+                        <div class="menus justify-content-center">
+                            <div class="nav">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">
+                                            <h4>Event Details</h4>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-muted" href="#">
+                                          <h4>Event Bookings</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         
+                        <!--Body-->
+                        <div class="container-fluid">
+                            <form action="">
+                                <!--General Information-->
+                                <div class="card mt-5 mr-md-5 ml-md-5">
+                                    <h3 class="card-title mt-3 ml-3">General Information</h3>
+                                    <hr class="mt-2">
+                                    <div class="row mb-3">
+                                        <div class="col-md-7 ml-4">
+                                            <div class="form-group">
+                                                <label for="eventName" class="text-muted">Event Name</label>
+                                                <br>
+                                                <input type="text" id="eventName" class="form-control eventName" placeholder="Event Name" required>
+                                                <br>
+
+                                                <label for="eventDescription" class="text-muted">Short Description</label>
+                                                <textarea id="eventDescription" rows="4" class="form-control" placeholder="Short Description of the Event" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5"></div>
+                                    </div>
+                                </div>
+
+                                <!--Date and Time-->
+                                <div class="card mt-5 mr-md-5 ml-md-5">
+                                    <h3 class="card-title mt-3 ml-3">Date and Time</h3>
+                                    <hr class="mt-2">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6 px-5">
+                                            <div class="form-group">
+                                                <label for="eventName" class="text-muted">Date</label>
+                                                <br>
+                                                <input type="date" id="eventName" class="form-control eventName" placeholder="Event Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-5">
+                                            <label for="eventDescription" class="text-muted">Time</label>
+                                            <input type="time" id="eventName" class="form-control eventName" placeholder="Event Name" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Location-->
+                                <div class="card mt-5 mr-md-5 ml-md-5">
+                                    <h3 class="card-title mt-3 ml-3">Location</h3>
+                                    <hr class="mt-2">
+                                    <div class="row mb-3">
+                                        <div class="col-md-7 ml-4">
+                                            <div class="form-group">
+                                                <label for="eventName" class="text-muted">Location</label>
+                                                <br>
+                                                <input type="text" id="eventName" class="form-control eventName" placeholder="Location of event" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5"></div>
+                                    </div>
+                                </div>
+
+                                <!--About Your Event-->
+                                <div class="card mt-5 mr-md-5 ml-md-5 mb-3">
+                                    <h3 class="card-title mt-3 ml-3">About Your Event</h3>
+                                    <hr class="mt-2">
+                                    <div class="row mb-3">
+                                        <div class="col-md-9 ml-4">
+                                            <div class="form-group">
+                                                <label for="eventDescription" class="text-muted">What is the event about?</label>
+                                                <textarea id="eventDescription" rows="4" class="form-control" placeholder="Event Description" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="update text-center mb-5">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
                         <!--Cancel Event Modal-->
                         <div class="modal fade" id="cancelEvent">
                             <div class="modal-dialog">
