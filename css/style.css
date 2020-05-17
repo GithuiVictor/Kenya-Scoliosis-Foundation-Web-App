@@ -1065,6 +1065,11 @@ body{
     border-left: 3px solid black;
 }
 
+.section-24 textarea:focus{
+    box-shadow: none;
+    border: 1.5px solid #01d262;
+}
+
 /*Section 25*/
 .section-25{
     background-color: #f9f6f5;
