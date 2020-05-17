@@ -351,62 +351,68 @@ body{
 
 /*Section 9*/
 .section-9{
-    background-color: #f9f6f5;
+    background-color: #01d262;
 }
 
-.section-9 .card-title{
-    margin-top: 4%;
+.section-9 .row .col-md-7, .col-md-5{
+    margin-top: 5%;
+    margin-bottom: 4.5%;
 }
 
-.section-9 .card-text{
-    color: rgb(0, 0, 0,  0.59);
-    font-size: 20px;
+.section-9 .col-md-7 img{
+    width: 590px;
 }
 
-.section-9 .card{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 45rem;
+.section-9 .para-1{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed';
+    margin-top: 10%;
+    font-size: 17px;
 }
 
 .section-9 .btn{
-    background-color: #01d262;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
     color: whitesmoke;
     margin-top: 6%;
 }
 
 .section-9 .btn:hover{
-    background-color: #01a74f;
+    background-color: whitesmoke;
+    color: #01d262;
 }
 
 /*section 10*/
 .section-10{
-    background-color: #f9f6f5;
+    background-color: #01d262;
 }
 
-.section-10 .card-title{
-    margin-top: 4%;
+.section-10 .row .col-md-7, .col-md-5{
+    margin-top: 5%;
+    margin-bottom: 4.5%;
 }
 
-.section-10 .card-text{
-    color: rgb(0, 0, 0,  0.59);
-    font-size: 20px;
+.section-10 .col-md-7 img{
+    width: 590px;
 }
 
-.section-10 .card{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 45rem;
+.section-10 .para-1{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed';
+    margin-top: 10%;
+    font-size: 17px;
 }
 
 .section-10 .btn{
-    background-color: #01d262;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
     color: whitesmoke;
     margin-top: 6%;
 }
 
 .section-10 .btn:hover{
-    background-color: #01a74f;
+    background-color: whitesmoke;
+    color: #01d262;
 }
 
 /*Section 11*/
