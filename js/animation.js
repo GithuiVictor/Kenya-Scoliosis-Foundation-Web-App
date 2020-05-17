@@ -46,13 +46,13 @@ $(document).ready(function(){
     });
 
     //Donation Page
-    (function donateAmount(){
+    $(function donateAmount(){
         var amountEntered = document.getElementsByClassName("amount").value;
         document.getElementsByClassName("donate-btn").innerHTML="Donate KES "+amountEntered;
     });
 
     //Admin Log in
-    (function logInValidation(){
+    $(function logInValidation(){
         var userName = document.getElementById("userName").value;
         var passWord = document.getElementById("password").value;
         var uName = /^([a-zA-Z0-9\.-_]+)@([a-zA-Z0-9-]+).([a-z]{2-10})(.[a-z]{2-10})?$/;
