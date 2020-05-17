@@ -178,6 +178,10 @@ body{
     margin-right: 0%;
 }
 
+.events .btn:focus{
+    box-shadow: none;
+}
+
 .events img{
     height: 100%;
     width: 100%;
@@ -206,4 +210,48 @@ body{
     background-color: transparent;
     color: #01d262;
     border: 1px solid #01d262;
+}
+
+/*Edit Event*/
+.eventEdit .heading-section{
+    background-color: #d5dadf;   
+}
+
+.eventEdit .path a{
+    text-decoration: none;
+    color: black;
+}
+.eventEdit .heading-1 a{
+    color: black;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.eventEdit .heading-1 a:hover{
+    color: #01d262;
+    transform: translateY(-5px);
+}
+
+.eventEdit .menus a{
+    color: black;
+}
+
+.eventEdit .menus .nav{
+    margin-left: 16rem;
+    border-bottom: none;
+}
+
+.eventEdit .menus .nav .active{
+    border-top: 4px solid green;
+    border-bottom: transparent;
+    background-color: transparent;
+    color: black;
+}
+
+.eventEdit .card{
+    box-shadow: 1px 2px 10px #999;
+}
+
+.eventEdit .update{
+    margin-bottom: 20rem;
 }
