@@ -1125,6 +1125,64 @@ body{
     border-left: none;
 }
 
+/*section-26*/
+.section-26{
+    background-color: #01d262;
+}
+
+.section-26 .row .col-md-6, .col-md-6{
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+}
+
+.section-26 .col-md-6 img{
+    width: 500px;
+    height: 590px;
+}
+
+.section-26 h3{
+    font-weight: 600;
+}
+
+.section-26 h6{
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.section-26 .para-1{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed';
+    margin-top: 10%;
+    font-size: 17px;
+}
+
+/*Section 27*/
+.section-27 .row .col-md-6, .col-md-6{
+    margin-top: 5%;
+    margin-bottom: 4.5%;
+}
+
+.section-27 .col-md-6 img{
+    width: 550px;
+    height: 550px;
+}
+
+.section-27 h3{
+    font-weight: 600;
+}
+
+.section-27 h6{
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.section-27 .para-1{
+    color: black;
+    font-family: 'Roboto Condensed';
+    margin-top: 10%;
+    font-size: 17px;
+}
+
 
 @media screen and (max-width: 768px){
     .section-2 .col-md-7 img{
