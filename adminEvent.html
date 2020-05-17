@@ -189,7 +189,7 @@
                                                 <button class="btn btn-success">Edit</button>
                                             </a>
                                             <a href="#">
-                                                <button class="btn btn-success">Cancel</button>
+                                                <button class="btn btn-success" data-toggle="modal" data-target="#cancelEvent">Cancel Event</button>
                                             </a>
                                         </div>
                                     </div>
@@ -228,7 +228,7 @@
                                                 <button class="btn btn-success">Edit</button>
                                             </a>
                                             <a href="#">
-                                                <button class="btn btn-success">Cancel</button>
+                                                <button class="btn btn-success" data-toggle="modal" data-target="#cancelEvent">Cancel Event</button>
                                             </a>
                                         </div>
                                     </div>
@@ -267,7 +267,7 @@
                                                 <button class="btn btn-success">Edit</button>
                                             </a>
                                             <a href="#">
-                                                <button class="btn btn-success">Cancel</button>
+                                                <button class="btn btn-success"  data-toggle="modal" data-target="#cancelEvent">Cancel Event</button>
                                             </a>
                                         </div>
                                     </div>
@@ -306,9 +306,28 @@
                                                 <button class="btn btn-success">Edit</button>
                                             </a>
                                             <a href="#">
-                                                <button class="btn btn-success">Cancel</button>
+                                                <button class="btn btn-success" data-toggle="modal" data-target="#cancelEvent">Cancel Event</button>
                                             </a>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Cancel Event Modal-->
+                        <div class="modal fade" id="cancelEvent">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Cancel Event?</h4>
+                                        <button class="close" type="button" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Are you sure you want to cancel the event?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button onclick="" class="btn cancelbtn mr-2">Yes I'm</button>
+                                        <button type="button" class="btn exitbtn" data-dismiss="modal">Cancel</button>
                                     </div>
                                 </div>
                             </div>
