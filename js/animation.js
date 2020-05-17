@@ -46,10 +46,7 @@ $(document).ready(function(){
     });
 
     //Donation Page
-    $(function donateAmount(){
-        var amountEntered = document.getElementsByClassName("amount").value;
-        document.getElementsByClassName("donate-btn").innerHTML="Donate KES "+amountEntered;
-    });
+    
 
     //Admin Log in
     $(function logInValidation(){
@@ -77,3 +74,8 @@ $(document).ready(function(){
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 });
+
+function donateAmount(){
+    var amountEntered = document.getElementById("amount").value;
+    document.getElementById("donate-btn").innerHTML="Donate $ "+amountEntered;
+}
