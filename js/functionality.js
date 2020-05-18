@@ -1,12 +1,11 @@
+//Add images
     const button = document.querySelector('.button');
     const imagesContainer = document.querySelector('.images');
 
-
-
     button.addEventListener('click', async () => {
-        $(imagesContainer).html("");
         const files  =  await selectFile('image/*', false);
         onFileSelected(files);
+        $(imagesContainer).html("");
     });
 
     const addImage = (src) => {
@@ -41,4 +40,9 @@
             };
             input.click();
         });
+    }
+
+    function eventAddHeading(){
+        const eventName = document.getElementById('eventNameAdd').Value;
+        $( "#eventNameHeading" ).replaceWith( $( eventName ) );
     }

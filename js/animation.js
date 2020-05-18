@@ -45,6 +45,9 @@ $(document).ready(function(){
         $('.section-5 .card-3 .card-img-top').slideDown();
     });
 
+    //Admin Calender
+    $('#date-input').dateDropper();
+
     //Donation Page
     
 
