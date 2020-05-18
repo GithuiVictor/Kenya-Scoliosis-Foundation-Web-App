@@ -317,6 +317,22 @@ body{
     background-color: green;
 }
 
+/*Event Bookings*/
+.eventBookings .rsvpTable{
+    margin-left: 5rem;
+}
+
+.eventBookings .card{
+    width: 35rem;
+}
+
+/*Event Bookings*/
+
+/*Edit Email*/
+.editEmail{
+    margin-left: -5rem;
+}
+
 /*User Info*/
 .userInfo .container {
     width: 100%;
