@@ -1,7 +1,10 @@
     const button = document.querySelector('.button');
     const imagesContainer = document.querySelector('.images');
 
+
+
     button.addEventListener('click', async () => {
+        $(imagesContainer).html("");
         const files  =  await selectFile('image/*', false);
         onFileSelected(files);
     });
@@ -34,11 +37,6 @@
             input.accept = contentType;
             input.onchange = () => {
                 const files = Array.from(input.files);
-                // if (multiple) {
-                //   resolve(files);
-                // } else {
-                //   resolve(files[0]);
-                // }
                 resolve(files[0]);
             };
             input.click();
