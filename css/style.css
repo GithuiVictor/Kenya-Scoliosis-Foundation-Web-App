@@ -158,10 +158,10 @@ body{
 .section-4 .heading-1{
     margin-top: 5%;
     margin-bottom: 3%;
-    font-family: 'Righteous';
+    font-family: 'Ubuntu';
+    font-weight: 700;
     width: 80%;
     color: whitesmoke;
-    text-align: end;
 }
 
 .section-4 i{
@@ -799,7 +799,6 @@ body{
 .section-21 .heading-1{
     margin-top: 10%;
     margin-bottom: 4%;
-    margin-right: 8%;
     text-align: center;
 }
 
