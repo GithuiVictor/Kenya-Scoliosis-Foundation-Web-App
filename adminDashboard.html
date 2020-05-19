@@ -145,7 +145,7 @@
                         <div class="row pt-md-5 mt-md-3 mb-md-5">
 
                             <!--Donations Card-->
-                            <div class="col-xl-4 col-sm-7 p-2">
+                            <div class="col-xl-3 col-sm-7 p-2">
                                 <div class="card card-common">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">
@@ -166,7 +166,7 @@
                             </div>
 
                             <!--Expsenses Card-->
-                            <div class="col-xl-4 col-sm-7 p-2">
+                            <div class="col-xl-3 col-sm-7 p-2">
                                 <div class="card card-common">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">
@@ -187,7 +187,7 @@
                             </div>
 
                             <!--VIsitors Card-->
-                            <div class="col-xl-4 col-sm-7 p-2">
+                            <div class="col-xl-3 col-sm-7 p-2">
                                 <div class="card card-common">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">
@@ -202,6 +202,27 @@
                                         <a href="#">
                                             <i class="fas fa-sync mr-3"></i>
                                             <span>Update Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Admin Users-->
+                            <div class="col-xl-3 col-sm-7 p-2">
+                                <div class="card card-common">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="fas fa-user fa-3x text-success"></i>
+                                            <div class="text-right text-secondary">
+                                                <h5>Users</h5>
+                                                <h3>4</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-secondary">
+                                        <a href="adminAddUser.html">
+                                            <i class="fas fa-plus mr-3"></i>
+                                            <span>Add User</span>
                                         </a>
                                     </div>
                                 </div>
@@ -467,9 +488,9 @@
                                             </a>
                                         </div>
                                         <div class="col-1 mt-4">
-                                            <a href="#" data-toggle="tooltip" title="delete" data-html="true" data-placement="top">
+                                            <button type="button" class="btn btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#cancelEvent" title="delete" data-html="true" data-placement="top">
                                                 <i class="fas fa-trash-alt fa-lg text-danger"></i>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -486,14 +507,14 @@
                                             </p>
                                         </div>
                                         <div class="col-1 mt-4">
-                                            <a href="#" data-toggle="tooltip" title="edit" data-html="true" data-placement="top">
+                                            <a href="adminEditEvent.html" data-toggle="tooltip" title="edit" data-html="true" data-placement="top">
                                                 <i class="fas fa-edit fa-lg text-success mr-2"></i>
                                             </a>
                                         </div>
                                         <div class="col-1 mt-4">
-                                            <a href="#" data-toggle="tooltip" title="delete" data-html="true" data-placement="top">
+                                            <button type="button" class="btn btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#cancelEvent" title="delete" data-html="true" data-placement="top">
                                                 <i class="fas fa-trash-alt fa-lg text-danger"></i>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -510,19 +531,19 @@
                                             </p>
                                         </div>
                                         <div class="col-1 mt-4">
-                                            <a href="#" data-toggle="tooltip" title="edit" data-html="true" data-placement="top">
+                                            <a href="adminEditEvent.html" data-toggle="tooltip" title="edit" data-html="true" data-placement="top">
                                                 <i class="fas fa-edit fa-lg text-success mr-2"></i>
                                             </a>
                                         </div>
                                         <div class="col-1 mt-4">
-                                            <a href="#" data-toggle="tooltip" title="delete" data-html="true" data-placement="top">
+                                            <button type="button" class="btn btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#cancelEvent" title="delete" data-html="true" data-placement="top">
                                                 <i class="fas fa-trash-alt fa-lg text-danger"></i>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="container-fluid bg-white event+">
+                                <div class="container-fluid bg-white event">
                                     <div class="row py-3 mb-2 event-border align-item-center">
                                         <div class="col-sm-9 col-9 ml-3">
                                             <h5>Event Name</h5>
@@ -534,14 +555,135 @@
                                             </p>
                                         </div>
                                         <div class="col-1 mt-4">
-                                            <a href="#" data-toggle="tooltip" title="edit" data-html="true" data-placement="top">
+                                            <a href="adminEditEvent.html" data-toggle="tooltip" title="edit" data-html="true" data-placement="top">
                                                 <i class="fas fa-edit fa-lg text-success mr-2"></i>
                                             </a>
                                         </div>
                                         <div class="col-1 mt-4">
-                                            <a href="#" data-toggle="tooltip" title="delete" data-html="true" data-placement="top">
+                                            <button type="button" class="btn btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#cancelEvent" title="delete" data-html="true" data-placement="top">
                                                 <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Modal-->
+                                <div class="modal fade" id="cancelEvent">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Cancel Event?</h4>
+                                                <button class="close" type="button" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Are you sure you want to cancel the event?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button onclick="" class="btn cancelbtn mr-2">Yes I'm</button>
+                                                <button type="button" class="btn exitbtn" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Admin Users-->
+        <section class="section-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                        <div class="row mb-4 align-items-center">
+                            <div class="col-xl-6 c0l-12 mb-4 mb-xl-0">
+                                <!--Admin Users-->
+                                <h3 class="text-muted text-center mb-3">Donors Info</h3>
+                                <table class="table table-striped bg-light text-center">
+                                    <thead>
+                                        <tr class="text-muted">
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Role</th>
+                                            <th>Email</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>Wagatune Mwaura</td>
+                                            <td>co-founder</td>
+                                            <td>wagatunemwaura@gmail.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#delete-user" title="delete" data-html="true" data-placement="top">
+                                                    <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>2</th>
+                                            <td>Wagatune Mwaura</td>
+                                            <td>Founder</td>
+                                            <td>wagatunemwaura@gmail.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#delete-user" title="delete" data-html="true" data-placement="top">
+                                                    <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Wagatune Mwaura</td>
+                                            <td>member</td>
+                                            <td>wagatunemwaura@gmail.com</td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm" data-toggle="modal" data-toggle="tooltip" data-target="#delete-user" title="delete" data-html="true" data-placement="top">
+                                                    <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        
+                                    </tbody>
+                                </table>
+                                <!--Pagination-->
+                                <nav>
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>&laquo;</span>
                                             </a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link py-2 px-3">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!--Modal-->
+                                <div class="modal fade" id="delete-user">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Delete User?</h4>
+                                                <button class="close" type="button" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Are you sure you want to delete the user?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button onclick="" class="btn cancelbtn mr-2">Yes I'm</button>
+                                                <button type="button" class="btn exitbtn" data-dismiss="modal">Cancel</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
