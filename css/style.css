@@ -150,7 +150,7 @@ body{
 /*Section 4*/
 .section-4 .container-fluid{
     background-color: black;
-    background-image: url('../images/like&share.JPG');
+    background-image: url('../images/like&share.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
