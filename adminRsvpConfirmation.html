@@ -168,26 +168,99 @@
                                 <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
                                     <div class="row">
                                         <div class="col-md-8 editEmail">
-                                            <div class="card">
+                                            <div class="card mb-5">
                                                 <h2 class="mt-3 ml-3 heading">Confirmation Email</h2>
                                                 <p class="para mt-3 px-4">Edit Email</p>
                                                 <hr>
 
-                                                <form action="" class="px-4">
+                                                <form action="" class="px-4 rsvpConfirmationEmail">
+                                                    <div class="form-group">
+                                                        <label for="subject" class="text-muted">Subject</label>
+                                                        <br>
+                                                        <input type="text" placeholder="Subject" id="subject" class="form-control subject" required>
+                                                    </div>
 
+                                                    <div class="mb-3">
+                                                        <label for="emailMessage" class="text-muted">Message</label>
+                                                        <textarea class="form-control" id="emailMessage" placeholder="Message" rows="6"></textarea>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="eventDetails" class="text-muted">
+                                                            Event Details
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </label>
+                                                        <textarea class="form-control" id="eventDetails" placeholder="Name, Date&time, Location" rows="3"></textarea>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="eventDescriptionLink">
+                                                        <label class="form-check-label" for="eventDescriptionLink">
+                                                            Link to the event description
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" value="Learn more about the event" id="description" class="form-control subject" required>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="addToCalendarLink">
+                                                        <label class="form-check-label" for="addToCalendarLink">
+                                                            Add to google calendar
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" value="Add to google calendar" id="calendar" class="form-control subject" required>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="signature" class="text-muted">Signature</label>
+                                                        <textarea class="form-control" id="signature" placeholder="Message" rows="5">
+Kenya Scoliosis Foundation
+info@kenyascoliosisfoundation.com
++254 712 345678
+www.kenyascoliosisfoundation.org
+                                                        </textarea>
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-success mt-2 mb-3" onclick="">Save</button>
                                                 </form>
                                             </div>
                                         </div>
 
                                         <div class="col-md-4">
                                             <div class="card">
-                                                <h2 class="mt-3 ml-3 heading">Confirmation Email</h2>
-                                                <p class="para mt-3 px-4">Edit Email</p>
+                                                <h2 class="mt-3 ml-3 heading">Email Preview</h2>
                                                 <hr>
-
-                                                <form action="" class="px-4">
-
-                                                </form>
+                                                <div class="ml-3 mb-5 text-muted">
+                                                    <h4 id="subjectPreview">Subject</h4>
+                                                    <br>
+                                                    <p id="messagePreview">
+                                                        Message
+                                                    </p>
+                                                    <br>
+                                                    <p id="eventDetailsPreview">
+                                                        Event Details
+                                                    </p>
+                                                    <a href="#" id="descriptionLinkPreview">
+                                                        Learn more about the event
+                                                    </a>
+                                                    <br>
+                                                    <a href="#" id="addToCalenderLink">
+                                                        Add to your google calender
+                                                    </a>
+                                                    <br>
+                                                    <br>
+                                                    <p id="signaturePreview">
+                                                        Kenya Scoliosis Foundation
+                                                        <br>
+                                                        info@kenyascoliosisfoundation.com
+                                                        <br>
+                                                        +254 712 345678
+                                                        <br>
+                                                        www.kenyascoliosisfoundation.org
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
