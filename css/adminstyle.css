@@ -424,4 +424,86 @@ body{
     color: #01d262;
     transform: translateY(-5px);
 }
+
+/*Blogs*/
+.blogs .heading-1{
+    font-weight: 700;
+}
+
+.blogs a{
+    border-radius: 50%;
+}
+
+.blogs a:hover{
+    text-decoration: none;
+}
+
+.blogs .blog-post{
+    box-shadow: 1px 2px 5px #999;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+    transition: all .4s;
+}
+
+.blogs .blog-post:hover{
+    box-shadow: 2px 3px 16px #999;
+    transform: translateY(-5px);
+}
+
+.blogs .blogName{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 35px;
+    color: black;
+}
+
+.blogs .blogName:hover{
+    text-decoration: none;
+    color: #01d262;
+}
+
+.blogs .tickets{
+    margin-top: 4rem;
+}
+
+.blogs .btn{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: 0%;
+}
+
+.blogs .btn:focus{
+    box-shadow: none;
+}
+
+.blogs img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal .cancelbtn{
+    background-color: transparent;
+    color: #01d262;
+    border: 2px solid #01d262;
+    transition: all .4s;
+}
+
+.modal .cancelbtn:hover{
+    background-color: #01d262;
+    color: whitesmoke;
+}
+
+.modal .exitbtn{
+    background-color: #01d262;
+    color: whitesmoke;
+    transition: all .4s;
+}
+
+.modal .exitbtn:hover{
+    background-color: transparent;
+    color: #01d262;
+    border: 1px solid #01d262;
+}
     
