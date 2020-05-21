@@ -650,6 +650,14 @@ body{
     color: #01d262;
 }
 
+.ourfinances .approveBtn{
+    transition: all .4s;
+}
+.ourfinances .approveBtn:hover{
+    background-color: #01a74f;
+    border-color: #01a74f;
+}
+
 /*task list*/
 .task-border{
     border-left: 3px solid #01a74f;
