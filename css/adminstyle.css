@@ -506,4 +506,18 @@ body{
     color: #01d262;
     border: 1px solid #01d262;
 }
+
+.writeArticle{
+    height: 60rem;
+}
+
+.editor{
+    height: 50rem;
+}
+
+#editor{
+    margin-bottom: 10rem;
+}
+
+
     
