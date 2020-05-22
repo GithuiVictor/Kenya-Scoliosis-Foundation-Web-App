@@ -442,27 +442,27 @@
                                     <div class="projects">
                                         <h6 class="mb-3">Scoliosis Aweareness Event</h6>
                                         <div class="progress mb-4" style="height: 20px;">
-                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 91%;">91%</div>
+                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" data-progress="91%"></div>
                                         </div>
 
                                         <h6 class="mb-3">Office building</h6>
                                         <div class="progress mb-4" style="height: 20px;">
-                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 50%;">50%</div>
+                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" data-progress="50%"></div>
                                         </div>
 
                                         <h6 class="mb-3">Scoliosis Aweareness Event</h6>
                                         <div class="progress mb-4" style="height: 20px;">
-                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 80%;">80%</div>
+                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" data-progress="80%"></div>
                                         </div>
 
                                         <h6 class="mb-3">Scoliosis Aweareness Event</h6>
                                         <div class="progress mb-4" style="height: 20px;">
-                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 10%;">10%</div>
+                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" data-progress="10%"></div>
                                         </div>
 
                                         <h6 class="mb-3">Scoliosis Aweareness Event</h6>
                                         <div class="progress mb-4" style="height: 20px;">
-                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 10%;">10%</div>
+                                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" data-progress="10%"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -700,5 +700,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/animation.js"></script>
+    <script src="js/animation.js" type="text/javascript"></script>
+    <script>
+        $(window).on("scroll", function(){
+        $(".progress").each(function(index, progress){
+            var progressBar = $(progress).find(".progress-bar");
+            var progressPercent = parseInt($(progressBar).attr("data-progress"));
+            if($(window).scrollTop()> $(progress).offset().top - 800){
+                $(progressBar).css("width",progressPercent+"%").text(progressPercent+"%");
+            }
+        });
+    });
+    </script>
+    
 </html>
