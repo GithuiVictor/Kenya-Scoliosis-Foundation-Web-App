@@ -666,3 +666,9 @@ body{
 .btn-sm:focus{
     box-shadow: none;
 }
+
+/*Progress Bars*/
+.progress .progress-bar{
+    width: 0;
+    transition: all ease 0.8s;
+}
