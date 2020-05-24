@@ -432,6 +432,15 @@ body{
     transform: translateY(-5px);
 }
 
+.addUser input:focus{
+    border-color: #01a74f;
+    box-shadow: none;
+}
+
+.addUser .images img{
+    margin-left: 9.5rem;
+}
+
 /*Blogs*/
 .blogs .heading-1{
     font-weight: 700;
