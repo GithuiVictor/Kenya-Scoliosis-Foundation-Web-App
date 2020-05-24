@@ -868,6 +868,10 @@ body{
 }
 
 /*Reminder Email*/
-.confirmationEmail .Message{
+.rsvpConfirmationEmail .Message{
     height: 20rem;
+}
+
+.userInfo .images img{
+    margin-left: 9.5rem;
 }
