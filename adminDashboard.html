@@ -158,7 +158,7 @@
                                             <i class="fas fa-hand-holding-usd fa-3x text-success"></i>
                                             <div class="text-right text-secondary">
                                                 <h5>Donations</h5>
-                                                <h3>KES 135,000</h3>
+                                                <h3>KES <span class="donationAmount">135,000</span></h3>
                                             </div>
                                         </div>
                                     </div>
@@ -715,7 +715,9 @@
             if($(window).scrollTop()> $(progress).offset().top - 800){
                 $(progressBar).css("width",progressPercent+"%").text(progressPercent+"%");
             }
-        });
+        }); 
+
+        $(".donationAmount").counterUp({delay:10,time:1000});
     });
     </script>
     
