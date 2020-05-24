@@ -25,12 +25,12 @@
                         <!--Side Menu-->
                         <div class="col-xl-2 xol-lg-3 col-md-4 sidebar fixed-top">
                             <a href="adminDashboard.html" class="navbar-brand text-white d-lock mx-auto text-center py-3 mb-4 bottom-border w-100">
-                                <img src="images/ksflogo.png" alt="">
+                                <img src="../images/ksflogo.png" alt="">
                             </a>
                             <div class="bottom-border pb-3">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img src="images/face.png" alt="user" width="50" class="rounded-circle mr-3">
+                                        <img src="../images/face.png" alt="user" width="50" class="rounded-circle mr-3">
                                     </div>
                                     <div class="col-md-9">
                                         <a href="adminProfile.html" class="user">
@@ -56,7 +56,7 @@
                                 <li class="nav-item">
                                     <a href="adminBlog.html" class="nav-link text-white p-3 mb-2 current">
                                         <i class="fas fa-clipboard-list text-light fa-lg mr-3"></i>
-                                        The Scolio Talk
+                                        The ScolioTalk
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -84,7 +84,7 @@
                         <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-nav-bar">
                             <div class="row align-item-center">
                                 <div class="col-md-4">
-                                    <h4 class="text-light text-uppercase mb-0 py-2">The Scolio Talk</h4>
+                                    <h4 class="text-light text-uppercase mb-0 py-2">The ScolioTalk</h4>
                                 </div>
                                 <div class="col-md-5">
                                     <form action="">
@@ -145,7 +145,7 @@
         </div>
 
         <!--Main Body-->
-        <main class="eventEdit">
+        <main class="articleDetails">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
@@ -184,13 +184,7 @@
 
                                                 <label for="articleTag" class="text-muted">Article Tag</label>
                                                 <br>
-                                                <select class="custom-select" id="articleTag">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                                <br>
+                                                <input type="text" id="articleName" class="form-control eventName" placeholder="Article Name" required>
                                                 <br>
 
                                                 <label for="articleDescription" class="text-muted">Short Description (Appears on the cards)</label>
