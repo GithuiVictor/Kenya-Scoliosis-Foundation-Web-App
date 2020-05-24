@@ -43,13 +43,23 @@ $(document).ready(function(){
     }
 
     //Location Autocomplete
-    var autocomplete;
-    autocomplete = new google.maps.places.Autocomplete((document.getElementById('eventVenue')), {
+    var autocompleteAddEvent;
+    var autocompleteEventDetail;
+    autocompleteAddEvent = new google.maps.places.Autocomplete((document.getElementById('eventVenue')), {
         types: ['geocode'],
     });
 
-    google.maps.event.addListener(autocomplete, 'place_changed', function(){
-        var near_place = autocomplete.getPlace();
+    google.maps.event.addListener(autocompleteAddEvent, 'place_changed', function(){
+        var near_place1 = autocompleteAddEvent.getPlace();
+    });
+
+
+    autocompleteEventDetail = new google.maps.places.Autocomplete((document.getElementById('eventVenueDetail')), {
+        types: ['geocode'],
+    });
+
+    google.maps.event.addListener(autocompleteEventDetail, 'place_changed', function(){
+        var near_place2 = autocompleteEventDetail.getPlace();
     });
 });
 
