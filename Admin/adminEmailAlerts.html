@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/bd3ff9c68f.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/adminstyle.css">
+        <title>Admin Dashboard</title>
+    </head>
+
+    <body>
+
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!--Side Menu-->
+                        <div class="col-xl-2 xol-lg-3 col-md-4 sidebar fixed-top">
+                            <a href="adminDashboard.html" class="navbar-brand text-white d-lock mx-auto text-center py-3 mb-4 bottom-border w-100">
+                                <img src="images/ksflogo.png" alt="">
+                            </a>
+                            <div class="bottom-border pb-3">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="images/face.png" alt="user" width="50" class="rounded-circle mr-3">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <a href="adminProfile.html" class="user">
+                                            <h5>Wagatune Mwaura</h5>
+                                        </a>
+                                        <h6 class="text-white text-muted">Role: <span class="role">Co-founder</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="navbar-nav flex-column mt-4">
+                                <li class="nav-item">
+                                    <a href="adminDashboard.html" class="nav-link text-white p-3 mb-2 sidebar-link">
+                                        <i class="fas fa-home text-light fa-lg mr-3"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="adminFinancesDonations.html" class="nav-link text-white p-3 mb-2 sidebar-link">
+                                        <i class="fas fa-money-bill-alt text-light fa-lg mr-3"></i>
+                                        Finances
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="adminBlog.html" class="nav-link text-white p-3 mb-2 sidebar-link">
+                                        <i class="fas fa-clipboard-list text-light fa-lg mr-3"></i>
+                                        The Scolio Talk
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="adminEvent.html" class="nav-link text-white p-3 mb-2 current">
+                                        <i class="fas fa-calendar-week text-light fa-lg mr-3"></i>
+                                        Event
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="adminSubscribers.html" class="nav-link text-white p-3 mb-2 sidebar-link">
+                                        <i class="fas fa-address-book text-light fa-lg mr-3"></i>
+                                        Subscribers
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="adminProfile.html" class="nav-link text-white p-3 mb-2 sidebar-link">
+                                        <i class="fas fa-user text-light fa-lg mr-3"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Top nav-->
+                        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-nav-bar">
+                            <div class="row align-item-center">
+                                <div class="col-md-4">
+                                    <h4 class="text-light text-uppercase mb-0 py-2">Events</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <form action="">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control search-input" placeholder="Search">
+                                            <button class="btn btn-white search-button" type="button">
+                                                <i class="fas fa-search text-success"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item icon-parent">
+                                            <a href="#" class="nav-link icon-bullet">
+                                                <i class="fas fa-comments text-muted fa-lg"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item icon-parent">
+                                            <a href="#" class="nav-link icon-bullet">
+                                                <i class="fas fa-bell text-muted fa-lg"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ml-md-auto">
+                                            <a href="#" class="nav-link" data-toggle="modal" data-target="#sign-out">
+                                                <i class="fas fa-sign-out-alt text-success fa-lg"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--modal-->
+        <div class="modal fade" id="sign-out">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Want to leave?</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Press logout to leave</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Stay here</button>
+                        <a href="adminlogin.html">
+                            <button type="button" class="btn btn-danger">logout</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main Body-->
+        <main class="eventEdit">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+
+                        <!--Heading-->
+                        <div class="row pt-md-5 mt-md-5 mb-md-3 heading-section">
+                            <div class="col-lg-7 col-sm-5 ml-5">
+                                <p class="text-muted ml-5 path">
+                                    <a href="adminEvent.html" class="text-muted">Events</a> 
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a href="adminEventBookings.html" class="text-muted">Event Bookings</a>
+                                    <i class="fas fa-chevron-right"></i>
+                                    Email Alerts
+                                </p>
+                                <h1 class="heading-1 mb-5">
+                                    <a href="adminEventBookings.html" class="mr-2">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                    Event Name
+                                </h1>
+                            </div>
+                        </div>
+
+                        <!--Body-->
+                        <div class="container-fluid emailAlerts">
+                            <form action="">
+
+                                <!--Email Alerts-->
+                                <div class="card mt-5 mr-md-5 ml-md-5">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <h3 class="card-title mt-3 ml-3">Email Alerts</h3>
+                                        </div>
+                                        <div class="col-md-3 text-right">
+                                            <button type="button" class="btn btn-success mt-3 mr-5" onclick="">save</button>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-2">
+                                    <div class="row mb-3">
+                                        <div class="col-md-7 ml-4">
+                                            <div class="custom-control custom-switch mb-3">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch">
+                                                <label class="custom-control-label" for="customSwitch">Get updates when guests RSVP</label>
+                                            </div>
+
+                                            <p>Recieve email alerts</p>
+                                            <div class="custom-control custom-radio custom-control-inline mt-0">
+                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline1">Daily</label>
+                                            </div>
+                                            <br>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline2">Per RSVP</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-5"></div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/animation.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/functionality.js"></script>
+    <script src="https://cdn.datedropper.com/get/{{LICENSE}}"></script>
+
+</html>
