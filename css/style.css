@@ -59,6 +59,83 @@ body{
     background-color: green !important;
 }
 
+#login{
+    border-left: 2px solid #00a04b;
+}
+
+#login a{
+    color: #434e5a;
+    transition: all .4s;
+}
+
+#login a:hover{
+    text-decoration: none;
+    color: #01a74f;
+    transform: translateY(-5px);
+}
+
+/*Log In Modal*/
+#loginModal .member a{
+    color: green;
+}
+
+#loginModal input{
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0%;
+}
+
+#loginModal input:focus{
+    box-shadow: none;
+    border-bottom: 2px solid;
+    border-color: #01a74f;
+}
+
+#loginModal .input-group-text{
+    border: none;
+    background: transparent;
+}
+
+#loginModal .btn{
+    border-radius: 5px;
+}
+ 
+#loginModal .divider{
+    border-top: 1px solid #00a04b;
+}
+
+#loginModal .or{
+    margin-top: -15px;
+}
+
+#loginModal .or span{
+    background-color: white;
+}
+
+#loginModal .facebook button{
+    background: transparent;
+}
+
+#loginModal .facebook button:focus{
+    box-shadow: none;
+}
+
+#loginModal .facebook button:hover{
+    color: #3b5998;
+}
+
+#loginModal .google button{
+    background: transparent;
+}
+
+#loginModal .google button:focus{
+    box-shadow: none;
+}
+
+#loginModal .google button:hover{
+    color: #4885ed;
+}
+
 
 /*Carosel*/
 .carousel{
