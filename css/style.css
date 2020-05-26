@@ -75,6 +75,10 @@ body{
 }
 
 /*Log In Modal*/
+#loginModal{
+    margin-top: 7rem;
+}
+
 #loginModal .member a{
     color: green;
 }
@@ -133,6 +137,63 @@ body{
 }
 
 #loginModal .google button:hover{
+    color: #4885ed;
+}
+
+/*Sign Up Modal*/
+#signUpForm{
+    margin-top: 7rem;
+}
+
+#signUpForm .member a{
+    color: green;
+}
+
+#signUpForm input{
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0%;
+}
+
+#signUpForm input:focus{
+    box-shadow: none;
+    border-bottom: 2px solid;
+    border-color: #01a74f;
+}
+
+#signUpForm .divider{
+    border-top: 1px solid #00a04b;
+}
+
+#signUpForm .or{
+    margin-top: -15px;
+}
+
+#signUpForm .or span{
+    background-color: white;
+}
+
+#signUpForm .facebook button{
+    background: transparent;
+}
+
+#signUpForm .facebook button:focus{
+    box-shadow: none;
+}
+
+#signUpForm .facebook button:hover{
+    color: #3b5998;
+}
+
+#signUpForm .google button{
+    background: transparent;
+}
+
+#signUpForm .google button:focus{
+    box-shadow: none;
+}
+
+#signUpForm .google button:hover{
     color: #4885ed;
 }
 
