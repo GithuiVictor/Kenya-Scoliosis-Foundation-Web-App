@@ -57,12 +57,99 @@
                             <a href="contactUs.html" class="nav-link">Contact us</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0" action="donateCreditCard.html">
+                    <form class="form-inline my-2 my-lg-0 mr-4" action="donateCreditCard.html">
                         <button class="btn menu-right-btn border" type="submit">Donate</button>
                     </form>
+
+                    <div class="nav-item" id="login">
+                        <a href="#" class="ml-4" data-toggle="modal" data-target="#loginModal">
+                            <span>Log in</span>
+                            <i class="fas fa-sign-in-alt mr-4 "></i>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </header>
+
+        <!--Log in modal-->
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <h4 class="modal-title text-center mt-4">Log In</h4>
+                        <p class="text-center mt-2 member">
+                            <span>New to this site? </span>
+                            <a href="#" data-toggle="modal" data-target="loginForm">Sign up</a>
+                        </p>
+
+                        <form action="" class="px-5 mt-5">
+                            <div class="form-group">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Email Address" id="userName" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Password" id="password" required>
+                                </div>
+                            </div>
+
+                            <a href="#" class="">Forgot Password?</a>
+
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-success">Log In</button>
+                            </div>
+                        </form>
+
+                        
+
+                        <div class="divider mt-5 text-center ml-4 mr-4"></div>
+                        
+                        <div class="or text-center px-5">
+                            <span>or log in with</span>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="text-right facebook">
+                                    <button class="btn">
+                                        <i class="fab fa-facebook-square fa-2x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-left google">
+                                    <button class="btn">
+                                        <i class="fab fa-google fa-2x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <p class="text-muted"> Don't have an account?</p>
+                            <p>
+                                <a href="#" class="text-success" data-toggle="modal" data-target="#signupModal">
+                                    Register 
+                                    <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <main>
             <!--Site Carousel-->
