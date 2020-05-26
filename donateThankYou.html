@@ -15,47 +15,7 @@
     </head>
 
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <!--Company Logo-->
-                <a href="index.html" class="navbar-brand ml-3">Kenya Scoliosis Foundation</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
-                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Navigation Menus-->
-                <div class="collapse navbar-collapse"></div>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav mr-auto ml-auto">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown1">About Us</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <a href="ourMission.html" class="dropdown-item">Our Mission</a>
-                                <a href="ourGoals.html" class="dropdown-item">Our Goals & Values</a>
-                                <a href="ourLeadership.html" class="dropdown-item">Our Leadership</a>
-                                <a href="scoliosisAwarenessMonth.html" class="dropdown-item">Aweareness Month</a>
-                                <a href="finances.html" class="dropdown-item">Our Finances</a>
-                                <a href="facilitation.html" class="dropdown-item">Facilitation</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="ourWork.html" class="nav-link">Our Work</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown3">News & Events</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                <a href="theScolioTalk.html" class="dropdown-item">The Scoliotalk</a>
-                                <a href="events.html" class="dropdown-item">Events</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contactUs.html" class="nav-link">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <div id="navbarDiv"></div>
 
         <main>
             <div class="section-21">
@@ -118,5 +78,10 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="js/animation.js" type="text/javascript"></script>
     <script src="js/jquery-3.5.0.js" type="text/javascript"></script>
+    <script>
+        $(function(){
+            $('#navbarDiv').load( 'Navigation.html' );
+        });
+    </script>
     
 </hmtl>
