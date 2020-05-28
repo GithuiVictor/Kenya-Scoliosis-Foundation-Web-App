@@ -83,30 +83,7 @@
             </div>
         </main>
 
-        <footer>
-            <div class="section-8 text-center" data-aos="fade">
-                <h4 style="margin-top: 4%;">Kenya Scoliosis Foundation</h4>
-                <h6 class="my-4">Go ahead of the curve</h6>
-
-                <div class="form-inline justify-content-center">
-                    <input type="text" value="Email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
-                    <input type="button" value="Subscribe" class="btn px-4 py-2">
-                </div>
-
-                <div class="social" style="margin: 5%;">
-                    <div class="d-flex flex-row justify-content-center">
-                        <a href="https://www.facebook.com/KenyaScoliosisFoundation/?referrer=whatsapp">
-                            <i class="fab fa-facebook-f m-2"></i>
-                        </a>
-                        <a href="https://twitter.com/ScoliosisKenya?s=08">
-                            <i class="fab fa-twitter m-2"></i>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-                <h5 id="copyright">&copy;2020 by Kenya Scoliosis Foundation</h5>
-            </div>
-        </footer>
+        <div id="footer"></div>
     </body>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -119,6 +96,7 @@
     <script>
         $(function(){
             $('#navbarDiv').load( 'Navigation.html' );
+            $("#footer").load('footer.hmtl');
         });
         
         AOS.init({
