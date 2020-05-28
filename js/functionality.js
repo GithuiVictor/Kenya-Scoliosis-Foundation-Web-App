@@ -1,7 +1,9 @@
-//Add images
-    function eventAddHeading(){
-        const eventName = document.getElementById('eventNameAdd').Value;
-        $( "#eventNameHeading" ).replaceWith( $( eventName ) );
-    }
+$(document).ready(function(){
+    $("#creditCardAmount").keyup(function(){
+        $('#creditCardDonate-btn').html('Donate $' +$('#creditCardAmount').val())
+    });
 
-//Comments
+    $('#amount').keyup(function(){
+        $('#mpesaAmount').html('"KES ' +$('#amount').val()+'"')
+    });
+});
