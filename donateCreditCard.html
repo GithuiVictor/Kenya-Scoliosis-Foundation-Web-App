@@ -7,7 +7,7 @@
         <title>Kenya Scoliosis Foundation</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="stylesheet" href="css/style.css">
 
         <!--For icons-->
@@ -25,7 +25,7 @@
                             <div class="row">
                                 <!--Side Content-->
                                 <div class="col-md-4">
-                                    <div class="card">
+                                    <div class="card" data-aos="fade">
                                         <div class="card-body">
                                             <h4 class="text-center mb-2">Finance Accountability</h4>
                                             <p class="para-1">
@@ -39,7 +39,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="card">
+                                    <div class="card" data-aos="fade">
                                         <div class="card-body">
                                             <h4 class="text-center mb-2">Give by Mail</h4>
                                             <p class="para-1">
@@ -61,7 +61,7 @@
 
                                 <!--Donation Section-->
                                 <div class="col-md-8">
-                                    <div class="card">
+                                    <div class="card" data-aos="fade-left">
                                         <h1 class="text-center mt-3 heading">Donate</h1>
                                         <p class="para-1 mt-3 px-4">
                                             Give a gift of your choice. 
@@ -147,30 +147,7 @@
             </div>
         </main>
 
-        <footer>
-            <div class="section-8 text-center">
-                <h4 style="margin-top: 4%;">Kenya Scoliosis Foundation</h4>
-                <h6 class="my-4">Go ahead of the curve</h6>
-
-                <div class="form-inline justify-content-center">
-                    <input type="text" value="Email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
-                    <input type="button" value="Subscribe" class="btn px-4 py-2">
-                </div>
-
-                <div class="social" style="margin: 5%;">
-                    <div class="d-flex flex-row justify-content-center">
-                        <a href="https://www.facebook.com/KenyaScoliosisFoundation/?referrer=whatsapp">
-                            <i class="fab fa-facebook-f m-2"></i>
-                        </a>
-                        <a href="https://twitter.com/ScoliosisKenya?s=08">
-                            <i class="fab fa-twitter m-2"></i>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-                <h5 id="copyright">&copy;2020 by Kenya Scoliosis Foundation</h5>
-            </div>
-        </footer>
+        <div id="footer"></div>
     </body>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -179,9 +156,16 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="js/animation.js" type="text/javascript"></script>
     <script src="js/jquery-3.5.0.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         $(function(){
             $('#navbarDiv').load( 'Navigation.html' );
+            $('footer').load('footer.hmtl');
+        });
+
+        AOS.init({
+            offset: 50,
+            duration: 800
         });
     </script>
     
