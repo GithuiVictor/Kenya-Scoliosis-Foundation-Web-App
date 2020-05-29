@@ -7,8 +7,6 @@
         <title>Kenya Scoliosis Foundation</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
         <link rel="stylesheet" href="css/style.css">
 
         <!--For icons-->
@@ -106,7 +104,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" class="">Forgot Password?</a>
+                            <a href="#" class="" data-toggle="modal" data-target="#forgotPassword" data-dismiss="modal">Forgot Password?</a>
 
                             <div class="text-center mt-3">
                                 <button type="submit" class="btn btn-success">Log In</button>
@@ -216,6 +214,31 @@
                                 </div>
                             </div>
                         </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Forgot Password modal-->
+        <div class="modal fade" id="forgotPassword">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center mt-4">Reset Password</h4>
+                        <p class="text-center mt-2 member">Please enter your email address</p>
+
+                        <form action="" class="px-5 mt-5 mb-5">
+                            <div class="form-group">
+                                <input type="text" placeholder="Email Address" id="Email" class="form-control" required>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-success">Reset Password</button>
+                            </div>
+                        </form>
                         
                     </div>
                 </div>
