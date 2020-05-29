@@ -6,4 +6,6 @@ $(document).ready(function(){
     $('#amount').keyup(function(){
         $('#mpesaAmount').html('"KES ' +$('#amount').val()+'"')
     });
+
+    
 });

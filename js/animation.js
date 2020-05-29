@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-    
+
     window.sr = ScrollReveal({duration : 1000});
         sr.reveal('.carousel-indicators, .carousel-inner .active .carousel-caption');
 
@@ -45,43 +45,4 @@ $(document).ready(function(){
         $('.section-5 .card-3 .card-img-top').slideDown();
     });
 
-    
-    $(".card-common.donationAmount").counterUp({delay:10,time:1000});
-
-    //Admin Calender
-    $('#date-input').dateDropper();
-
-    //Donation Page
-    
-
-    //Admin Log in
-    $(function logInValidation(){
-        var userName = document.getElementById("userName").value;
-        var passWord = document.getElementById("password").value;
-        var uName = /^([a-zA-Z0-9\.-_]+)@([a-zA-Z0-9-]+).([a-z]{2-10})(.[a-z]{2-10})?$/;
-        if(uName.test(userName)){
-            return true;
-        }else{
-            alert("Invalid UserName")
-            return false;
-        }
-    });
-
-    //Admin Side
-    (function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-});
-
-function donateAmount(){
-    var amountEntered = document.getElementById("amount").value;
-    document.getElementById("donate-btn").innerHTML="Donate $ "+amountEntered;
-}
+});  
