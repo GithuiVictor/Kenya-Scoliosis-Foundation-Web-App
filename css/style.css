@@ -197,6 +197,23 @@ body{
     color: #4885ed;
 }
 
+/*forgot password modal*/
+#forgotPassword{
+    margin-top: 10rem;
+}
+
+#forgotPassword input{
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0%;
+}
+
+#forgotPassword input:focus{
+    box-shadow: none;
+    border-bottom: 2px solid;
+    border-color: #01a74f;
+}
+
 
 /*Carosel*/
 .carousel{
@@ -877,7 +894,10 @@ body{
     background-color: #01d262;
     color: whitesmoke;
     margin-top: 3%;
-;
+}
+
+.section-19 .btn:focus{
+    box-shadow: none;
 }
 
 .section-19 .btn:hover{
@@ -1183,6 +1203,15 @@ body{
 .section-25 .col-md-8 .input-group .input-group-prepend .input-group-text{
     background-color: transparent;
     border-right: none;
+}
+
+.section-25 .card-img-top{
+    height: 10rem;
+    object-fit: cover;
+}
+
+.section-25 h6{
+    font-weight: 600;
 }
 
 #creditCard{
