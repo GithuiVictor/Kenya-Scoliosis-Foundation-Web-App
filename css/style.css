@@ -1578,25 +1578,29 @@ body{
 
     .section-2 img{
         margin-top: 0rem !important;
-        width: 21rem !important;
+        width: 20.5rem !important;
     }
 
     
     .section-5 .card{
-        width: 23.9rem !important;
+        width: 20.5rem !important;
         margin-left: 0%;
         margin-right: 0%;
     }
 
+    .section-6{
+        width: 23rem;
+    }
     .section-6 h1{
         margin-left: 2rem !important;
     }
+
     .section-6 img{
-        width: 24rem;
+        width: 20rem;
     }
 
     .section-6 .logo2 img{
-        width: 24rem;
+        width: 20rem;
     }
 
     .section-7 .card{
@@ -1606,7 +1610,7 @@ body{
     }
 
     .section-9 img{
-        width: 24rem !important;
+        width: 20rem !important;
     }
 
     .section-9 h1{
@@ -1614,16 +1618,16 @@ body{
     }
 
     .section-10 img{
-        width: 24rem !important;
+        width: 20rem !important;
     }
 
     .section-15 img{
-        width: 24rem !important;
+        width: 20.5rem !important;
         margin-top: 0rem !important;
     }
 
     .section-16 img{
-        width: 24rem !important;
+        width: 20.5rem !important;
         margin-top: 0rem !important;
     }
 
@@ -1671,22 +1675,27 @@ body{
     }
 
     .section-25 .card{
-        margin-left: -0rem !important;
+        margin-left: -0.8rem !important;
     }
 
     .section-25 .donateForm .card{
         width: 22rem !important;
     }
     .section-26 img{
-        width: 24rem !important;
-        height: 25rem !important;
+        width: 20.5rem !important;
+        height: 20.5rem !important;
         object-fit: cover;
     }
 
     .section-27 img{
-        width: 24rem !important;
-        height: 25rem !important;
+        width: 20.5rem !important;
+        height: 20.5rem !important;
         object-fit: cover;
+    }
+
+    .modal{
+        height: 35rem;
+        width: 22.5rem;
     }
 }
 
