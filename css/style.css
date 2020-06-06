@@ -1276,276 +1276,6 @@ body{
     font-size: 17px;
 }
 
-
-@media screen and (max-width: 476px){
-    .navbar-brand span{
-        visibility: hidden;
-
-    }
-
-    #navbarMenu #login{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .carousel{
-        width: 30rem;
-        height: 29rem;
-    }
-
-    .carousel img{
-        height: 29rem !important;
-        object-fit: cover;
-    }
-
-    .carousel-caption{
-        visibility: visible;
-        font-size: medium;
-    }
-
-    .section-2 img{
-        margin-top: 0rem !important;
-        width: 27.5rem !important;
-    }
-
-    
-    .section-5 .card{
-        width: 27.7rem !important;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-6 h1{
-        margin-left: 2.5rem !important;
-    }
-    .section-6 .logo2 img{
-        width: 28rem;
-    }
-
-    .section-7 .card{
-        width: 14.5rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-9 img{
-        width: 28rem !important;
-    }
-
-    .section-9 h1{
-        margin-top: -4rem !important;
-    }
-
-    .section-10 img{
-        width: 27.5rem !important;
-    }
-
-    .section-15 img{
-        width: 27.5rem !important;
-        margin-top: 0rem !important;
-    }
-
-    .section-16 img{
-        width: 27.8rem !important;
-        margin-top: 0rem !important;
-    }
-
-    .section-16 h1{
-        margin-top: 0rem !important;
-    }
-
-    .section-11 .col-md-7 img{
-        width: 400px;
-        margin-top: 20%;
-    }
-
-    .section-12 .card{
-        width: 21rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-13 .card{
-        width: 43rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-14 .card{
-        width: 43rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-18 .card{
-        width: 14rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-19 .card{
-        width: 43rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-17 .col-md-5{
-        margin-top: 11%;
-    }
-
-    .section-26 img{
-        width: 27.5rem !important;
-        height: 25rem !important;
-        object-fit: cover;
-    }
-
-    .section-27 img{
-        width: 27.5rem !important;
-        height: 25rem !important;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 414px){
-    .navbar-brand span{
-        visibility: hidden;
-        margin-left: -5rem;
-    }
-
-    #navbarMenu #login{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .carousel{
-        width: 25.9rem;
-        height: 29rem;
-    }
-
-    .carousel img{
-        height: 29rem !important;
-        object-fit: cover;
-    }
-
-    .carousel-caption{
-        visibility: visible;
-        font-size: medium;
-    }
-
-    .section-2 img{
-        margin-top: 0rem !important;
-        width: 24rem !important;
-    }
-
-    
-    .section-5 .card{
-        width: 23.9rem !important;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-6 h1{
-        margin-left: 2rem !important;
-    }
-    .section-6 img{
-        width: 24rem;
-    }
-
-    .section-6 .logo2 img{
-        width: 24rem;
-    }
-
-    .section-7 .card{
-        width: 14.5rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-9 img{
-        width: 24rem !important;
-    }
-
-    .section-9 h1{
-        margin-top: -4rem !important;
-    }
-
-    .section-10 img{
-        width: 24rem !important;
-    }
-
-    .section-15 img{
-        width: 24rem !important;
-        margin-top: 0rem !important;
-    }
-
-    .section-16 img{
-        width: 24rem !important;
-        margin-top: 0rem !important;
-    }
-
-    .section-16 h1{
-        margin-top: 0rem !important;
-    }
-
-    .section-11 .col-md-7 img{
-        width: 400px;
-        margin-top: 20%;
-    }
-
-    .section-12 .card{
-        width: 21rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-13 .card{
-        width: 43rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-14 .card{
-        width: 43rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-18 .card{
-        width: 14rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-19 .card{
-        width: 43rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-17 .col-md-5{
-        margin-top: 11%;
-    }
-
-    .section-25 .card{
-        margin-left: -0rem !important;
-    }
-
-    .section-25 .donateForm .card{
-        width: 22rem !important;
-    }
-    .section-26 img{
-        width: 24rem !important;
-        height: 25rem !important;
-        object-fit: cover;
-    }
-
-    .section-27 img{
-        width: 24rem !important;
-        height: 25rem !important;
-        object-fit: cover;
-    }
-}
-
 @media screen and (max-width: 360px){
     .navbar-brand span{
         visibility: hidden;
@@ -1678,6 +1408,10 @@ body{
         margin-left: -0.8rem !important;
     }
 
+    .section-25 .project{
+        margin-top: 0rem !important;
+    }
+
     .section-25 .donateForm .card{
         width: 22rem !important;
     }
@@ -1696,6 +1430,7 @@ body{
     .modal{
         height: 38rem;
         width: 22.5rem;
+        margin-top: 3rem !important;
     }
 }
 
@@ -1831,6 +1566,10 @@ body{
         margin-left: -0.6rem !important;
     }
 
+    .section-25 .project{
+        margin-top: 0rem !important;
+    }
+
     .section-25 .donateForm .card{
         width: 22rem !important;
     }
@@ -1849,5 +1588,158 @@ body{
     .modal{
         height: 38rem;
         width: 23.5rem;
+        margin-top: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .navbar-brand span{
+        font-size: 15px;
+    }
+
+    .carousel{
+        width: 63.75rem;
+        height: 29rem;
+    }
+
+    .carousel img{
+        height: 29rem !important;
+        object-fit: cover;
+    }
+
+    .carousel-caption{
+        visibility: visible;
+        font-size: medium;
+    }
+
+    .section-2{
+        width: 63.75rem;
+    }
+
+    .section-2 img{
+        margin-top: 0rem !important;
+        width: 21.5rem !important;
+    }
+
+    
+    .section-5 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-6{
+        width: 23.5rem;
+    }
+    .section-6 h1{
+        margin-left: 2rem !important;
+    }
+
+    .section-6 img{
+        width: 20rem;
+    }
+
+    .section-6 .logo2 img{
+        width: 20rem;
+    }
+
+    .section-7 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-9 img{
+        width: 20rem !important;
+    }
+
+    .section-9 h1{
+        margin-top: -4rem !important;
+    }
+
+    .section-10 img{
+        width: 20rem !important;
+    }
+
+    .section-15 img{
+        width: 20.5rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .section-16 img{
+        width: 21.5rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .section-16 h1{
+        margin-top: 0rem !important;
+    }
+
+    .section-11 .col-md-7 img{
+        width: 400px;
+        margin-top: 20%;
+    }
+
+    .section-12 .card{
+        width: 21rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-13 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-14 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-18 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-19 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-17 .col-md-5{
+        margin-top: 11%;
+    }
+
+    .section-25 .card{
+        margin-left: -0.6rem !important;
+    }
+
+    .section-25 .project{
+        margin-top: 0rem !important;
+    }
+
+    .section-25 .donateForm .card{
+        width: 22rem !important;
+    }
+    .section-26 img{
+        width: 21.5rem !important;
+        height: 21.5rem !important;
+        object-fit: cover;
+    }
+
+    .section-27 img{
+        width: 21.5rem !important;
+        height: 21.5rem !important;
+        object-fit: cover;
+    }
+
+    .modal{
+        height: 38rem;
+        width: 23.5rem;
+        margin-top: 3rem !important;
     }
 }
