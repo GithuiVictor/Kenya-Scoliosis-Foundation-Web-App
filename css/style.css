@@ -1592,7 +1592,7 @@ body{
     }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1366px){
     .navbar-brand span{
         font-size: 15px;
     }
@@ -1617,30 +1617,35 @@ body{
     }
 
     .section-2 img{
-        margin-top: 0rem !important;
-        width: 21.5rem !important;
+        width: 30.5rem !important;
+    }
+
+    .section-2 .col-md-5{
+        margin-left: -1rem;
     }
 
     
     .section-5 .card{
-        width: 21.5rem !important;
+        width: 18.5rem !important;
         margin-left: 0%;
         margin-right: 0%;
     }
 
     .section-6{
-        width: 23.5rem;
+        width: 63.75rem
     }
     .section-6 h1{
-        margin-left: 2rem !important;
+        margin-left: 12rem !important;
     }
 
     .section-6 img{
-        width: 20rem;
+        width: 27rem;
+        margin-left: 2rem;
     }
 
     .section-6 .logo2 img{
-        width: 20rem;
+        width: 27rem;
+        margin-left: 8rem;
     }
 
     .section-7 .card{
@@ -1651,14 +1656,19 @@ body{
 
     .section-9 img{
         width: 20rem !important;
+        margin-left: -8rem !important;
     }
 
-    .section-9 h1{
-        margin-top: -4rem !important;
+    .section-9 .col-md-5{
+        margin-left: -8rem !important;
     }
 
     .section-10 img{
-        width: 20rem !important;
+        width: 25rem !important;
+    }
+
+    .section-10 .col-md-5{
+        margin-left: -0rem !important;
     }
 
     .section-15 img{
