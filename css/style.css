@@ -1594,26 +1594,16 @@ body{
 
 @media screen and (max-width: 1366px){
     .navbar-brand span{
-        font-size: 15px;
+        font-size: 19px;
     }
 
     .carousel{
-        width: 63.75rem;
-        height: 29rem;
+        height: 40rem;
     }
 
     .carousel img{
-        height: 29rem !important;
+        height: 40rem !important;
         object-fit: cover;
-    }
-
-    .carousel-caption{
-        visibility: visible;
-        font-size: medium;
-    }
-
-    .section-2{
-        width: 63.75rem;
     }
 
     .section-2 img{
@@ -1624,65 +1614,8 @@ body{
         margin-left: -1rem;
     }
 
-    
-    .section-5 .card{
-        width: 18.5rem !important;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-6{
-        width: 63.75rem
-    }
     .section-6 h1{
-        margin-left: 12rem !important;
-    }
-
-    .section-6 img{
-        width: 27rem;
-        margin-left: 2rem;
-    }
-
-    .section-6 .logo2 img{
-        width: 27rem;
-        margin-left: 8rem;
-    }
-
-    .section-7 .card{
-        width: 21.5rem !important;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .section-9 img{
-        width: 20rem !important;
-        margin-left: -8rem !important;
-    }
-
-    .section-9 .col-md-5{
-        margin-left: -8rem !important;
-    }
-
-    .section-10 img{
-        width: 25rem !important;
-    }
-
-    .section-10 .col-md-5{
-        margin-left: -0rem !important;
-    }
-
-    .section-15 img{
-        width: 20.5rem !important;
-        margin-top: 0rem !important;
-    }
-
-    .section-16 img{
-        width: 21.5rem !important;
-        margin-top: 0rem !important;
-    }
-
-    .section-16 h1{
-        margin-top: 0rem !important;
+        margin-left: 13.5rem !important;
     }
 
     .section-11 .col-md-7 img{
@@ -1708,12 +1641,6 @@ body{
         margin-right: 0%;
     }
 
-    .section-18 .card{
-        width: 21.5rem !important;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
     .section-19 .card{
         width: 43rem;
         margin-left: 0%;
@@ -1722,34 +1649,5 @@ body{
 
     .section-17 .col-md-5{
         margin-top: 11%;
-    }
-
-    .section-25 .card{
-        margin-left: -0.6rem !important;
-    }
-
-    .section-25 .project{
-        margin-top: 0rem !important;
-    }
-
-    .section-25 .donateForm .card{
-        width: 22rem !important;
-    }
-    .section-26 img{
-        width: 21.5rem !important;
-        height: 21.5rem !important;
-        object-fit: cover;
-    }
-
-    .section-27 img{
-        width: 21.5rem !important;
-        height: 21.5rem !important;
-        object-fit: cover;
-    }
-
-    .modal{
-        height: 38rem;
-        width: 23.5rem;
-        margin-top: 3rem !important;
     }
 }
