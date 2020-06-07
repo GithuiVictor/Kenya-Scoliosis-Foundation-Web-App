@@ -65,7 +65,7 @@ $(document).ready(() => {
 
 const storyCard = (story) => {
     return `
-         <div class="col-md-4" data-aos="fade-right">
+         <div class="col-md-4" data-aos="fade-up">
             <div class="card">
                 <img src="${story.image}" alt="img1" class="card-img-top">
                 <div class="card-body">
