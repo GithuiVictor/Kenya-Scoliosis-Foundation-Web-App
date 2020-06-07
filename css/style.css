@@ -1339,6 +1339,10 @@ body{
         margin-right: 0%;
     }
 
+    .section-8 .btn{
+        margin-top: 1rem;
+    }
+
     .section-9 img{
         width: 20rem !important;
     }
@@ -1402,6 +1406,11 @@ body{
 
     .section-17 .col-md-5{
         margin-top: 11%;
+    }
+
+    .section-23 .card{
+        margin-left: -1rem;
+        width: 22.5rem !important;
     }
 
     .section-25 .card{
@@ -1497,6 +1506,10 @@ body{
         margin-right: 0%;
     }
 
+    .section-8 .btn{
+        margin-top: 1rem;
+    }
+
     .section-9 img{
         width: 20rem !important;
     }
@@ -1562,6 +1575,11 @@ body{
         margin-top: 11%;
     }
 
+    .section-23 .card{
+        margin-left: -1rem;
+        width: 23.4rem !important;
+    }
+
     .section-25 .card{
         margin-left: -0.6rem !important;
     }
@@ -1588,6 +1606,332 @@ body{
     .modal{
         height: 38rem;
         width: 23.5rem;
+        margin-top: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .navbar-brand span{
+        visibility: hidden;
+        margin-left: -15rem;
+    }
+
+    #navbarMenu #login{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel{
+        height: 29rem;
+    }
+
+    .carousel img{
+        height: 29rem !important;
+        object-fit: cover;
+    }
+
+    .carousel-caption{
+        visibility: visible;
+        font-size: medium;
+    }
+
+    .section-2 img{
+        margin-top: 0rem !important;
+        width: 23.5rem !important;
+    }
+
+    
+    .section-5 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    
+    .section-6 h1{
+        margin-left: 3rem !important;
+    }
+
+    .section-6 img{
+        width: 20rem;
+    }
+
+    .section-6 .logo2 img{
+        width: 20rem;
+    }
+
+    .section-7 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-8 .btn{
+        margin-top: 1rem;
+    }
+
+    .section-9 img{
+        width: 20rem !important;
+    }
+
+    .section-9 h1{
+        margin-top: -4rem !important;
+    }
+
+    .section-10 img{
+        width: 22rem !important;
+    }
+
+    .section-15 img{
+        width: 23.8rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .section-16 img{
+        width: 21.5rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .section-16 h1{
+        margin-top: 0rem !important;
+    }
+
+    .section-11 .col-md-7 img{
+        width: 400px;
+        margin-top: 20%;
+    }
+
+    .section-12 .card{
+        width: 21rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-13 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-14 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-18 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-19 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-17 .col-md-5{
+        margin-top: 11%;
+    }
+
+    .section-23 .card{
+        margin-left: -1rem;
+        width: 25.5rem;
+    }
+
+    .section-25 .card{
+        margin-left: -0.6rem !important;
+    }
+
+    .section-25 .project{
+        margin-top: 0rem !important;
+    }
+
+    .section-25 .card{
+        width: 24.2rem !important;
+    }
+
+    .section-26 img{
+        width: 21.5rem !important;
+        height: 21.5rem !important;
+        margin-left: 1.2rem;
+        object-fit: cover;
+    }
+
+    .section-27 img{
+        width: 21.5rem !important;
+        height: 21.5rem !important;
+        margin-left: 1.2rem;
+        object-fit: cover;
+    }
+
+    .modal{
+        height: 38rem;
+        width: 25.5rem;
+        margin-top: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .navbar-brand span{
+        visibility: hidden;
+        margin-left: -15rem;
+    }
+
+    #navbarMenu #login{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel{
+        height: 29rem;
+    }
+
+    .carousel img{
+        height: 29rem !important;
+        object-fit: cover;
+    }
+
+    .carousel-caption{
+        visibility: visible;
+        font-size: medium;
+    }
+
+    .section-2 img{
+        margin-top: 0rem !important;
+        width: 23.5rem !important;
+    }
+
+    
+    .section-5 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    
+    .section-6 h1{
+        margin-left: 3rem !important;
+    }
+
+    .section-6 img{
+        width: 20rem;
+    }
+
+    .section-6 .logo2 img{
+        width: 20rem;
+    }
+
+    .section-7 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-8 .btn{
+        margin-top: 1rem;
+    }
+
+    .section-9 img{
+        width: 20rem !important;
+    }
+
+    .section-9 h1{
+        margin-top: -4rem !important;
+    }
+
+    .section-10 img{
+        width: 22rem !important;
+    }
+
+    .section-15 img{
+        width: 23.8rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .section-16 img{
+        width: 21.5rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .section-16 h1{
+        margin-top: 0rem !important;
+    }
+
+    .section-11 .col-md-7 img{
+        width: 400px;
+        margin-top: 20%;
+    }
+
+    .section-12 .card{
+        width: 21rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-13 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-14 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-18 .card{
+        width: 21.5rem !important;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-19 .card{
+        width: 43rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .section-17 .col-md-5{
+        margin-top: 11%;
+    }
+
+    .section-23 .card{
+        margin-left: -1rem;
+        width: 25.9rem;
+    }
+
+    .section-25 .card{
+        margin-left: -0.6rem !important;
+    }
+
+    .section-25 .project{
+        margin-top: 0rem !important;
+    }
+
+    .section-25 .card{
+        width: 24.2rem !important;
+    }
+
+    .section-26 img{
+        width: 21.5rem !important;
+        height: 21.5rem !important;
+        margin-left: 1.2rem;
+        object-fit: cover;
+    }
+
+    .section-27 img{
+        width: 21.5rem !important;
+        height: 21.5rem !important;
+        margin-left: 1.2rem;
+        object-fit: cover;
+    }
+
+    .modal{
+        height: 38rem;
+        width: 25.5rem;
         margin-top: 3rem !important;
     }
 }
