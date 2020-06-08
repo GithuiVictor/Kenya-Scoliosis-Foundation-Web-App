@@ -49,22 +49,16 @@
                             </form> 
                         </div>
                         <div class="col-md-5" data-aos="fade">
-                            <div class="ml-4">
-                                <h6 class="mt-4">To pay for ticket please follow the process below:</h6>
-                                <p>
-                                    <ol class="para-1">
-                                        <li>Go to your M-PESA menu</li>
-                                        <li>Select Lipa na M-PESA</li>
-                                        <li>Select Buy Goods and Services</li>
-                                        <li>Enter Till Number: <strong>"5154883"</strong></li>
-                                        <li>Enter Amount: <strong>"KES <span id="eventFeePreview"></span>"</strong></li>
-                                        <li>Enter Your M-PESA pin</li>
-                                        <li>Confirm payment/ transaction</li>
-                                        <li>Done!</li>
-                                    </ol>
-                                </p>
+                            <div class="ml-4 mt-2">
+                                <h5>Purchase ticket via:</h5>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio" checked>M-PESA</label>
+                                  </div>
+                                  <div class="radio">
+                                    <label><input type="radio" name="optradio">Credit card</label>
+                                  </div>
                             </div>
-                            
+
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">Event Name</h4>
@@ -99,7 +93,7 @@
     <script>
         $(function(){
             $('#navbarDiv').load( 'Navigation.html' );
-            $("#footer").load('footer.hmtl');
+            $("#footer").load('footer.html');
         });
         
         AOS.init({
