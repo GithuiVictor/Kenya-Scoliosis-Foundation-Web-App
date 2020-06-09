@@ -120,7 +120,6 @@ const storyCardStoriesPage = (story) => {
                 </a>
                 <p class="text-muted">
                     <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i>${moment(story.createdAt).format('MMMM Do YYYY')}</span>
-                    <span><i class="far fa-clock mr-1"></i>${moment(story.createdAt).format('h:mm a')}</span>
                 </p>
                 <hr>
                 <p>
