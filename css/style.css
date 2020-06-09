@@ -263,9 +263,10 @@ body{
 }
 
 .section-2 a{
-    color: rgb(105, 117, 98);
+    color: red;
     font-size: 20px;
     text-decoration: none;
+    transition: all .4s;
 }
 
 .section-2 a:hover{
