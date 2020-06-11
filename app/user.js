@@ -97,7 +97,6 @@ class User {
             CURRENT_USER = res.data;
             $('#login').empty().append(loggedInTemplate());
         }).catch(e => {
-            console.log(e);
             $('#login').empty().append(`
                 <a href="#" class="ml-4" data-toggle="modal" data-target="#loginModal">
                     <span>Log in</span>
@@ -131,8 +130,8 @@ const checkAuth = async () => {
                         if (user) {
                             CURRENT_USER = user;
                             localStorage.setItem(JWT_TOKEN_NAME, token);
+                            $('#login').empty().append(loggedInTemplate());
                             toastr.info(`Welcome ${user.firstName || ''}.`, 'Sign in successful');
-                            User.getProfile();
                         } else
                             throw new Error();
                     } else {
@@ -148,9 +147,15 @@ const checkAuth = async () => {
                             positionClass: 'toast-top-full-width',
                         });
                 }
+            } else {
+                // try to get profile
+                User.getProfile();
             }
+        } else {
+            User.getProfile();
         }
     } catch (e) {
+        User.getProfile();
         console.log(e);
     }
 };
@@ -184,11 +189,9 @@ const verifyEmail = async () => {
     }
 };
 
-checkAuth();
-
 verifyEmail();
 
-User.getProfile();
+checkAuth();
 
 const registerForm = $('#register-form');
 registerForm.on('submit', (e) => {
