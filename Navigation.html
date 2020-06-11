@@ -5,8 +5,9 @@
             <img src="images/ksflogo.png" alt="logo">
             <span>Kenya Scoliosis Foundation</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -20,7 +21,8 @@
                         <a href="ourMission.html" class="dropdown-item">Our Mission</a>
                         <a href="ourGoals.html" class="dropdown-item">Our Goals & Values</a>
                         <a href="ourLeadership.html" class="dropdown-item">Our Leadership</a>
-                        <a href="scoliosisAwarenessMonth.html" class="dropdown-item">Awareness Month</a>
+                        <a href="scoliosisAwarenessMonth.html" class="dropdown-item">Awareness
+                            Month</a>
                         <a href="finances.html" class="dropdown-item">Our Finances</a>
                         <a href="facilitation.html" class="dropdown-item">Facilitation</a>
                     </div>
@@ -29,7 +31,8 @@
                     <a href="ourWork.html" class="nav-link">Our Work</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown3">News & Events</a>
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown3">News &
+                        Events</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                         <a href="theScolioTalk.html" class="dropdown-item">The Scoliotalk</a>
                         <a href="events.html" class="dropdown-item">Events</a>
@@ -44,10 +47,7 @@
             </form>
 
             <div class="nav-item" id="login">
-                <a href="#" class="ml-4" data-toggle="modal" data-target="#loginModal">
-                    <span>Log in</span>
-                    <i class="fas fa-sign-in-alt mr-4 "></i>
-                </a>
+                <span style="padding-left: 1rem">.......</span>
             </div>
         </div>
     </nav>
@@ -57,16 +57,17 @@
 <div class="modal fade" id="loginModal">
     <div class="modal-dialog">
         <div class="modal-content">
-            
+
             <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button id="closeModal" type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title text-center mt-4">Log In</h4>
                 <p class="text-center mt-2 member">
                     <span>New to this site? </span>
-                    <a href="#" data-toggle="modal" data-target="#signUpForm" data-dismiss="modal">Sign up</a>
+                    <a href="#" data-toggle="modal" data-target="#signUpForm" data-dismiss="modal">Sign
+                        up</a>
                 </p>
 
-                <form action="" class="px-5 mt-5">
+                <form class="px-5 mt-5" id="login-form">
                     <div class="form-group">
                         <div class="input-group flex-nowrap">
                             <div class="input-group-prepend">
@@ -74,7 +75,8 @@
                                     <i class="fas fa-user"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Email Address" id="userName" required>
+                            <input type="text" class="form-control" placeholder="Email Address"
+                                   id="userName" name="email" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -84,21 +86,22 @@
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </div>
-                            <input type="password" class="form-control" placeholder="Password" id="password" required>
+                            <input type="password" class="form-control" placeholder="Password"
+                                   id="password" name="password" required>
                         </div>
                     </div>
 
-                    <a href="#" class="" data-toggle="modal" data-target="#forgotPassword" data-dismiss="modal">Forgot Password?</a>
+                    <a href="#" class="" data-toggle="modal" data-target="#forgotPassword"
+                       data-dismiss="modal">Forgot Password?</a>
 
                     <div class="text-center mt-3">
                         <button type="submit" class="btn btn-success">Log In</button>
                     </div>
                 </form>
 
-                
 
                 <div class="divider mt-5 text-center ml-4 mr-4"></div>
-                
+
                 <div class="or text-center px-5">
                     <span>or log in with</span>
                 </div>
@@ -106,25 +109,26 @@
                 <div class="row mt-3">
                     <div class="col-6">
                         <div class="text-right facebook">
-                            <button class="btn">
+                            <button class="btn loginFacebook">
                                 <i class="fab fa-facebook-square fa-2x"></i>
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="text-left google">
-                            <button class="btn">
+                            <button class="btn loginGoogle">
                                 <i class="fab fa-google fa-2x"></i>
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="text-center mt-4">
                     <p class="text-muted"> Don't have an account?</p>
                     <p>
-                        <a href="#" class="text-success" data-toggle="modal" data-target="#signUpForm" data-dismiss="modal">
-                            Register 
+                        <a href="#" class="text-success" data-toggle="modal"
+                           data-target="#signUpForm" data-dismiss="modal">
+                            Register
                             <i class="fas fa-arrow-right ml-1"></i>
                         </a>
                     </p>
@@ -138,37 +142,44 @@
 <div class="modal fade" id="signUpForm">
     <div class="modal-dialog">
         <div class="modal-content">
-            
+
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title text-center mt-4">Sign Up</h4>
                 <p class="text-center mt-2 member">
                     <span>Already a member? </span>
-                    <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log In</a>
+                    <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Log
+                        In</a>
                 </p>
 
-                <form action="" class="px-5 mt-5">
+                <form class="px-5 mt-5" id="register-form">
                     <div class="form-row mt-3">
                         <div class="col">
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                            <input type="text" class="form-control" name="firstName" id="firstName"
+                                   placeholder="First Name" required>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                            <input type="text" class="form-control" name="lastName" id="lastName"
+                                   placeholder="Last Name" required>
                         </div>
                     </div>
 
                     <div class="form-group"></div>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Email Address" id="Email" class="form-control" required>
+                        <input type="text" placeholder="Email Address" name="email"
+                               class="form-control" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="password" placeholder="Password" id="password" class="form-control" required>
+                        <input type="password" placeholder="Password" id="register-pass"
+                               name="password" class="form-control" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="password" placeholder="Confirm Password" id="confirmPassword" class="form-control" required>
+                        <input type="password" placeholder="Confirm Password"
+                               id="register-confirm-pass" name="confirm-password"
+                               class="form-control" required>
                     </div>
 
                     <div class="text-center mt-3">
@@ -177,7 +188,7 @@
                 </form>
 
                 <div class="divider mt-5 text-center ml-4 mr-4"></div>
-                
+
                 <div class="or text-center px-5">
                     <span>or Sign Up with</span>
                 </div>
@@ -185,20 +196,20 @@
                 <div class="row mt-3 mb-5">
                     <div class="col-6">
                         <div class="text-right facebook">
-                            <button class="btn">
+                            <button class="btn loginFacebook">
                                 <i class="fab fa-facebook-square fa-2x"></i>
                             </button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="text-left google">
-                            <button class="btn">
+                            <button class="btn loginGoogle">
                                 <i class="fab fa-google fa-2x"></i>
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -208,7 +219,7 @@
 <div class="modal fade" id="forgotPassword">
     <div class="modal-dialog">
         <div class="modal-content">
-            
+
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title text-center mt-4">Reset Password</h4>
@@ -216,15 +227,18 @@
 
                 <form action="" class="px-5 mt-5 mb-5">
                     <div class="form-group">
-                        <input type="text" placeholder="Email Address" id="Email" class="form-control" required>
+                        <input type="text" placeholder="Email Address" id="Email"
+                               class="form-control" required>
                     </div>
 
                     <div class="text-center mt-3">
                         <button type="submit" class="btn btn-success">Reset Password</button>
                     </div>
                 </form>
-                
+
             </div>
         </div>
     </div>
 </div>
+
+<script src="app/user.js"></script>
