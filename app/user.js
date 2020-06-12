@@ -1,4 +1,3 @@
-let CURRENT_USER = null;
 const loggedInTemplate = () => `
         <span style="padding-left: 1rem">Account | ${CURRENT_USER.firstName || 'user'}</span>
     `;

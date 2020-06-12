@@ -1,6 +1,10 @@
 let mapInitialized = false;
 const coord = {latitude: null, longitude: null};
 
+urlParams = new URLSearchParams(window.location.search);
+const eventId = urlParams.get('event');
+let currentEvent = null;
+
 class Event {
     static getEvents() {
         $('.loading-overlay').show();
@@ -29,6 +33,8 @@ class Event {
             .then(function (response) {
                 $('.loading-overlay').hide();
                 const event = response.data;
+                currentEvent = event;
+
                 coord.latitude = event.latitude;
                 coord.longitude = event.longitude;
 
@@ -37,11 +43,13 @@ class Event {
                 $('.event-shortDescription').text(event.shortDescription);
                 $('.event-description').html(event.description);
                 $('.event-date').text(moment(event.eventDate).format('MMMM Do YYYY'));
-                const eventTime = `2020-01-01 ${event.eventTime}`;
+                const eventTime = `2020-01-01T${event.eventTime}`;
                 $('.event-time').text(moment(eventTime).format('h:mm a'));
                 $('.event-location').text(event.location);
                 $('.event-locationDetails').text(event.locationDetails);
+                $('.event-amount').text(event.amount ? `Ksh ${event.amount}` : 'Free');
                 $('.event-image').attr('src', event.image);
+                $('.rsvp-btn').attr('href', `rsvp.html?event=${event.id}`);
 
                 if (!mapInitialized) {
                     try {
@@ -50,21 +58,179 @@ class Event {
 
                     }
                 }
+
+                // for checking out
+                if (event.paid && event.amount) {
+                    // show checkout
+                    $('#payment-options').show();
+                    $('#checkout-btn').text('checkout');
+                } else {
+                    // normal rsvp
+                    // hide payments
+                    $('#payment-options').hide();
+                    // change button text from checkout to rsvp
+                    $('#checkout-btn').text('RSVP');
+                }
+
             })
             .catch(function (error) {
                 defaultErrorHandler(error);
             });
     }
-}
 
-urlParams = new URLSearchParams(window.location.search);
-const eventId = urlParams.get('event');
+    static async rsvpEvent(form) {
+        const loader = $('.loading-overlay');
+        try {
+            loader.show();
+            let data = new FormData(form[0]);
+            if (CURRENT_USER && CURRENT_USER.id) {
+                data.append('userId', CURRENT_USER.id);
+            }
+            data = formDataToJson(data);
+            const resp = await axios.post(`events/${currentEvent && currentEvent.id}/rsvps`, data);
+
+
+            if (currentEvent.paid && currentEvent.amount) {
+                Event.pay(resp.data.id);
+            } else {
+                location.href = `rsvpThankyou.html?event=${currentEvent.id}`;
+            }
+            loader.hide();
+        } catch (e) {
+            $('.loading-overlay').hide();
+            console.log(e);
+        }
+    }
+
+    static async pay(rsvpId) {
+        const tickets = $("input[name='tickets'].rsvp-tickets").val();
+        const amount = +tickets * +(currentEvent.amount);
+        var x = getpaidSetup({
+            PBFPubKey: RAVE_PUBLIC_KEY,
+            customer_name: $("input[name='name'].rsvp-name").val(),
+            customer_email: $("input[name='email'].rsvp-email").val(),
+            amount,
+            customer_phone: $("input[name='phone'].rsvp-phone").val(),
+            currency: "KES",
+            txref: uuidv4(),
+            onclose: function () {
+            },
+            callback: function (response) {
+                // collect txRef returned and pass to a  server page to complete status check.
+                if (
+                    response.data && response.data.data && response.data.data.status === 'successful'
+                ) {
+                    // redirect to a success page
+                    const txref = response.data.data.txRef;
+                    Event.verifyPayment(txref, rsvpId);
+                } else {
+                    // redirect to a failure page.
+                    toastr.warning('Your payment did not go through. Please try again or contact support for help.',
+                        'Payment Failed', {
+                            closeButton: true,
+                            timeOut: 0,
+                            extendedTimeOut: 0,
+                            positionClass: 'toast-top-full-width',
+                        });
+                }
+
+                x.close(); // use this to close the modal immediately after payment.
+            }
+        });
+    }
+
+    static async verifyPayment(txref, rsvpId) {
+        const loader = $('.loading-overlay');
+        try {
+            loader.show();
+
+            const resp = await axios.post(`events/${currentEvent && currentEvent.id}/rsvps/${rsvpId}/pay`, {txref});
+            if (resp.data.code === 3) {
+                toastr.warning(resp.data.message, 'Payment Verification failed!!', {
+                    closeButton: true,
+                    timeOut: 0,
+                    extendedTimeOut: 0,
+                    positionClass: 'toast-top-full-width',
+                });
+            } else if (resp.data.code === 2) {
+                toastr.success(resp.data.message, 'Overpayment!!', {
+                    closeButton: true,
+                    timeOut: 0,
+                    extendedTimeOut: 0,
+                    positionClass: 'toast-top-full-width',
+                });
+                setTimeout(() => {
+                    location.href = `rsvpThankyou.html?event=${currentEvent.id}`;
+                }, 3000);
+            } else {
+                location.href = `rsvpThankyou.html?event=${currentEvent.id}`;
+            }
+
+            loader.hide();
+        } catch (e) {
+            loader.hide();
+            console.log(e);
+            defaultErrorHandler(error, 'Payment Verification failed!', {
+                closeButton: true,
+                timeOut: 0,
+                extendedTimeOut: 0,
+                positionClass: 'toast-top-full-width',
+            });
+        }
+    }
+}
 
 $(document).ready(() => {
     Event.getEvents();
 
     if (eventId) {
         Event.getEventDetails(eventId);
+    }
+
+    if (page === 'rsvp') {
+        loadRaveScript();
+
+        // if there is a logged in user, auto populate their details in the rsvp form
+        if (CURRENT_USER) {
+            $('#name').val(`${CURRENT_USER.firstName || ''} ${CURRENT_USER.lastName || ''}`);
+            $('#emailAddress').val(`${CURRENT_USER.email || ''}`);
+            $('#phoneNumber').val(`${CURRENT_USER.phone || ''}`);
+        }
+
+
+        const rsvpForm = $('#rsvp-form');
+        rsvpForm.on('submit', (e) => {
+            e.preventDefault();
+
+            if (!currentEvent) {
+                toastr.warning('Please search for this event in events page and click rsvp to rsvp.', 'Invalid Event');
+                return;
+            }
+
+            if (currentEvent.paid && currentEvent.amount) {
+                if (!$("input[name='payment-opt']:checked").val()) {
+                    toastr.warning('Please select a payment option.');
+                    return;
+                }
+                if ($("input[name='payment-opt']:checked").val() === 'mpesa') {
+                    toastr.warning('Mpesa payment option is currently not supported. We are working hard to improve your experience.');
+                    return;
+                }
+            }
+            Event.rsvpEvent(rsvpForm);
+        });
+    }
+
+    if (page === 'rsvp-thankyou') {
+        $('.add-calendar-btn').on('click', () => {
+            if (currentEvent) {
+                window.open(`
+                https://calendar.google.com/calendar/render?action=TEMPLATE&text=${currentEvent.title}
+        &dates=${currentEvent.eventDate.split('-').join('')}T${currentEvent.eventTime}/${currentEvent.eventDate.split('-').join('')}T${currentEvent.eventTime}&details=${currentEvent.title}
+        &location=${currentEvent.location}
+            `, '_blank');
+            }
+        })
     }
 });
 
@@ -79,6 +245,14 @@ function initMap() {
     }
 }
 
+const loadRaveScript = () => {
+    const src = 'https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js';
+    let script = document.querySelector('script[src="' + src + '"]');
+    script.parentNode.removeChild(script);
+    script = document.createElement('script');
+    script.setAttribute('src', src);
+    document.head.appendChild(script);
+};
 
 const eventCard = (event) => {
     const eventTime = `2020-01-01 ${event.eventTime}`;
@@ -107,3 +281,5 @@ const eventCard = (event) => {
 
     `;
 };
+
+

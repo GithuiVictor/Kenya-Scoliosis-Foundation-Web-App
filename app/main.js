@@ -5,8 +5,10 @@ if (location.protocol == "https:") {
 const JWT_TOKEN_NAME = '77DBF735F4270529CE923C3CB6767396E147E5FC';
 axios.defaults.baseURL = API;
 axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem(JWT_TOKEN_NAME)}`;
+const RAVE_PUBLIC_KEY = 'FLWPUBK_TEST-18356ef4f899535216c510626fc8fa77-X';
 
 let urlParams = null;
+let CURRENT_USER = null;
 
 const formDataToJson = (formData) => {
     const object = {};
