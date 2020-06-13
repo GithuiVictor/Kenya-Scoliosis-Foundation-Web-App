@@ -63,7 +63,7 @@ class Donation {
             loader.show();
 
             const resp = await axios.post(`donations`, data);
-            location.href = `donateThankyou.html`;
+            location.href = `donateThankYou.html`;
 
             loader.hide();
         } catch (e) {
