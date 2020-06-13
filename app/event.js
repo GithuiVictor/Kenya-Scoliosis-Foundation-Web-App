@@ -170,7 +170,7 @@ class Event {
         } catch (e) {
             loader.hide();
             console.log(e);
-            defaultErrorHandler(error, 'Payment Verification failed!', {
+            defaultErrorHandler(e, 'Payment Verification failed!', {
                 closeButton: true,
                 timeOut: 0,
                 extendedTimeOut: 0,
@@ -244,15 +244,6 @@ function initMap() {
         mapInitialized = true;
     }
 }
-
-const loadRaveScript = () => {
-    const src = 'https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js';
-    let script = document.querySelector('script[src="' + src + '"]');
-    script.parentNode.removeChild(script);
-    script = document.createElement('script');
-    script.setAttribute('src', src);
-    document.head.appendChild(script);
-};
 
 const eventCard = (event) => {
     const eventTime = `2020-01-01 ${event.eventTime}`;

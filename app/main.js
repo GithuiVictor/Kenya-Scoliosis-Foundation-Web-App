@@ -28,3 +28,12 @@ const defaultErrorHandler = (error, title, toastrOptions) => {
         toastr.error('An error occurred. Please try again.');
     }
 };
+
+const loadRaveScript = () => {
+    const src = 'https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js';
+    let script = document.querySelector('script[src="' + src + '"]');
+    script.parentNode.removeChild(script);
+    script = document.createElement('script');
+    script.setAttribute('src', src);
+    document.head.appendChild(script);
+};

@@ -95,6 +95,10 @@ class User {
         axios.get('/auth/profile').then(res => {
             CURRENT_USER = res.data;
             $('#login').empty().append(loggedInTemplate());
+
+            $('.user-name').val(CURRENT_USER.firstName || '' + ' ' + CURRENT_USER.lastName || '').text(CURRENT_USER.firstName || '' + ' ' + CURRENT_USER.lastName || '');
+            $('.user-email').val(CURRENT_USER.email || '').val(CURRENT_USER.email || '');
+            $('.user-phone').val(CURRENT_USER.phone || '').val(CURRENT_USER.email || '');
         }).catch(e => {
             $('#login').empty().append(`
                 <a href="#" class="ml-4" data-toggle="modal" data-target="#loginModal">
